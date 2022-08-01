@@ -306,6 +306,7 @@
     .recommend-m .pic .cate a {
         color: var(--text);
         font-size: 14px;
+        font-weight: 700;
         text-transform: uppercase;
     }
     .recommend-m .title {
@@ -320,8 +321,8 @@
     }
     .recommend-m .title a {
         font-size: 24px;
+        font-weight: 700;
         color: var(--text);
-
     }
     .recommend-m .box {
         margin-top: 8px;
