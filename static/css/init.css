@@ -1,20 +1,27 @@
 @font-face {
     font-family: 'Poppins';
-    src: url('../fonts/Poppins-Light.ttf');
+    src: url('../fonts/Poppins-Light.woff');
     font-style: normal;
     font-weight: 300;
 }
 @font-face {
     font-family: 'Poppins';
-    src: url('../fonts/Poppins-Regular.ttf');
+    src: url('../fonts/Poppins-Regular.woff');
     font-style: normal;
     font-weight: 400;
 }
 @font-face {
     font-family: 'Poppins';
-    src: url('../fonts/Poppins-Bold.ttf');
+    src: url('../fonts/Poppins-Bold.woff');
     font-style: normal;
     font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
 }
 :root {
     --theme: #8183FF;
