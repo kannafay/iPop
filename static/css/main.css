@@ -91,7 +91,7 @@
 .main .post ul li .box .content .cate,
 .main .post ul li .box .content .cate a {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 700;
     color: var(--theme);
     text-transform: uppercase;
 }
