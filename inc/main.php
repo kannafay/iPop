@@ -37,13 +37,14 @@
 <section class="main-m">
     <dic class="post">
         <ul>
+            <?php $i=0; ?>
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
                     <li>
                         <div class="pic">
                             <a href="<?php the_permalink() ?>">
                                 <?php if(has_post_thumbnail()){the_post_thumbnail('large');}else{ ?>
-                                    <img src="<?php echo catch_that_image(); ?>" alt="">
+                                    <img src="<?php echo catch_that_image(); ?>?<?php $i++; echo $i; ?>" alt="">
                                 <?php } ?>
                             </a>
                         </div>
