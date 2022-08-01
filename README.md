@@ -4,6 +4,10 @@
 
 > The theme is inspired by foreign app design works. Thank their designers for their exquisite creation. A simple, elegant and fashionable wordpress blog theme. So there is no other fancy content. The theme is all in English, because I want to be international. If you want to support Chinese, you can modify the content of the file by yourself. Please understand, thank you!
 
+本项目支持MIT开源协议
+
+> This project supports MIT open source protocol
+
 ## 官网网站 Official Website
 
 [Poppins主题](https://www.poppins.cn)
