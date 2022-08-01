@@ -32,7 +32,7 @@
                 <div class="menu">
                     <div class="box">
                         <a class="search-btn"><span class="iconfont icon-sousuo1"></span>Search<span class="iconfont icon-right"></span></a>
-                        <a href="<?php echo home_url().'/wp-admin'; ?>" target="_blank"><span class="iconfont icon-login1"></span>Login<span class="iconfont icon-right"></span></a>
+                        <a class="login" href="<?php echo home_url().'/wp-admin'; ?>" target="_blank"><span class="iconfont icon-login1"></span>Login<span class="iconfont icon-right"></span></a>
                     </div>
                 </div>
             <? } ?>

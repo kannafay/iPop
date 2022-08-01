@@ -138,8 +138,9 @@
     border-radius: var(--radius-sub);
     margin-bottom: 10px;
     background-color: var(--bgc-sub);
+    position: relative;
 }
-.navbar .right .menu .box .logout {
+.navbar .right .menu .box a:last-child {
     margin-bottom: 0;
 }
 .navbar .right .menu .box .search-btn,
@@ -149,13 +150,17 @@
 .navbar .right .menu .box a {
     font-size: 14px;
     color: var(--text);
+    display: flex;
+    align-items: center;
+    width: 150px;
 }
 .navbar .right .menu .box a span {
     font-size: 12px;
     color: var(--text);
 }
 .navbar .right .menu .box a span:last-child {
-    margin-left: 50px;
+    position: absolute;
+    right: 10px;
 }
 .navbar .right .menu .box a:hover,
 .navbar .right .menu .box a:hover span {
@@ -165,7 +170,8 @@
     margin-right: 5px;
 }
 .navbar .right .menu .box .search-btn:hover,
-.navbar .right .menu .box .setting:hover {
+.navbar .right .menu .box .setting:hover,
+.navbar .right .menu .box .login:hover {
     background-color: var(--theme);
     background: linear-gradient(to right, var(--theme), var(--theme-sub));
 }
