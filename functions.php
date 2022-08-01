@@ -123,18 +123,16 @@ function setPostViews($postID) {
 }
 
 // 主题后台设置
-add_action('admin_menu', 'add_theme_options_menu');
-function add_theme_options_menu() {
-    add_theme_page(
-        'Theme Setting',
-        'Theme Setting',
-        'edit_theme_options',
-        'theme-options',
-        'theme_settings_admin'
-    );
-}
-function theme_settings_admin() {
-    require get_template_directory()."/admin/admin.php";
+add_action('admin_menu', 'pop_set');
+function pop_set(){
+    add_menu_page(
+        'Poppins Setting', 
+        'Poppins Setting', 
+        'edit_themes', 
+        'pop_opt', 
+        'pop_opt');}
+function pop_opt(){
+    require get_template_directory()."/admin/option.php";
 }
 
 // 分页第一页返回首页
