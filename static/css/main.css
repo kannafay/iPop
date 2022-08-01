@@ -91,7 +91,9 @@
 .main .post ul li .box .content .cate,
 .main .post ul li .box .content .cate a {
     font-size: 14px;
+    font-weight: 300;
     color: var(--theme);
+    text-transform: uppercase;
 }
 .main .post ul li .box .content .title {
     margin-top: 5px;
@@ -105,7 +107,6 @@
 }
 .main .post ul li .box .content .title a {
     font-size: 15px;
-    font-weight: 700;
     color: var(--text);
 }
 .main .post ul li .box .content .excerpt {
@@ -169,7 +170,6 @@
 #pagination a {
     display: block;
     font-size: 14px;
-    font-weight: 300;
     padding: 6px 20px;
     background-color: var(--bgc-sub);
     border-radius: var(--radius-large);

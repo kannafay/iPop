@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3557637 */
-  src: url('iconfont.woff2?t=1659307811700') format('woff2'),
-       url('iconfont.woff?t=1659307811700') format('woff'),
-       url('iconfont.ttf?t=1659307811700') format('truetype');
+  src: url('iconfont.woff2?t=1659381307933') format('woff2'),
+       url('iconfont.woff?t=1659381307933') format('woff'),
+       url('iconfont.ttf?t=1659381307933') format('truetype');
 }
 
 .iconfont {
@@ -15,14 +15,6 @@
 
 .icon-login1:before {
   content: "\e624";
-}
-
-.icon-login2:before {
-  content: "\e766";
-}
-
-.icon-login:before {
-  content: "\e8ef";
 }
 
 .icon-a-cloudyatnight:before {
@@ -79,10 +71,6 @@
 
 .icon-doubleleft:before {
   content: "\e7ed";
-}
-
-.icon-vertical-align-top:before {
-  content: "\e7f0";
 }
 
 .icon-menu:before {

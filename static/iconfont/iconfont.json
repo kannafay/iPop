@@ -13,20 +13,6 @@
       "unicode_decimal": 58916
     },
     {
-      "icon_id": "3756772",
-      "name": "符号-login",
-      "font_class": "login2",
-      "unicode": "e766",
-      "unicode_decimal": 59238
-    },
-    {
-      "icon_id": "6598349",
-      "name": "login",
-      "font_class": "login",
-      "unicode": "e8ef",
-      "unicode_decimal": 59631
-    },
-    {
       "icon_id": "27300831",
       "name": "cloudy at night",
       "font_class": "a-cloudyatnight",
@@ -123,13 +109,6 @@
       "font_class": "doubleleft",
       "unicode": "e7ed",
       "unicode_decimal": 59373
-    },
-    {
-      "icon_id": "4767030",
-      "name": "vertical-align-top",
-      "font_class": "vertical-align-top",
-      "unicode": "e7f0",
-      "unicode_decimal": 59376
     },
     {
       "icon_id": "4767059",

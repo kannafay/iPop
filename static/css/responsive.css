@@ -306,7 +306,7 @@
     .recommend-m .pic .cate a {
         color: var(--text);
         font-size: 14px;
-        font-weight: 700;
+        text-transform: uppercase;
     }
     .recommend-m .title {
         margin-top: 20px;
@@ -320,8 +320,8 @@
     }
     .recommend-m .title a {
         font-size: 24px;
-        font-weight: 700;
         color: var(--text);
+
     }
     .recommend-m .box {
         margin-top: 8px;
@@ -406,7 +406,6 @@
     .single .box .content .cate, 
     .single .box .content .cate a {
         font-size: 14px;
-        text-transform: uppercase
     }
     .single .box .content .title {
         font-size: 24px;
@@ -498,9 +497,10 @@
         height: 0;
     }
     .main-m .box .cate a {
-        font-size: 16px;
-        font-weight: 700;
+        font-size: 14px;
+        font-weight: 300;
         color: var(--theme);
+        text-transform: uppercase;
     }
     .main-m .box .title {
         line-height: 1.4;

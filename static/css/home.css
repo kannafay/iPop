@@ -53,7 +53,9 @@
 .recommend .content .cate,
 .recommend .content .cate a {
     font-size: 18px;
+    font-weight: 300;
     color: var(--theme);
+    text-transform: uppercase;
 }
 .recommend .content .title {
     margin-top: 10px;
@@ -67,7 +69,6 @@
 }
 .recommend .content .title a {
     font-size: 24px;
-    font-weight: 700;
     color: var(--text);
 }
 .recommend .content .excerpt {
