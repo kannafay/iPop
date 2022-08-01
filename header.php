@@ -25,9 +25,7 @@
                 </div>
             <?php } else { ?>
                 <div class="user visitor">
-                    <a href="<?php echo home_url().'/wp-admin'; ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/static/images/visitor.png" alt="">
-                    </a>
+                    <img src="<?php echo get_template_directory_uri(); ?>/static/images/visitor.png" alt="">
                 </div>
                 <div class="menu">
                     <div class="box">
