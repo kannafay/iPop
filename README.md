@@ -15,6 +15,3 @@
 请从[Releases](../../releases)下载，master分支为开发版。
 
 > Please download from [Releases](../../releases). The master branch is the development version. 
-
-## 更新日志 Update Log
-
