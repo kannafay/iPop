@@ -10,12 +10,6 @@
 
 > [Preview](https://www.poppins.cn)
 
-## 下载说明 Download Instructions
-
-请从[Releases](../../releases)下载，master分支为开发版。
-
-> Please download from [Releases](../../releases). The master branch is the development version. 
-
 ## 温馨提示 Warm Prompt
 
 主题砍掉了许多功能，望悉知。

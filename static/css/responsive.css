@@ -64,6 +64,7 @@
     .navbar-m .right .search-btn-m span {
         font-size: 20px;
         color: var(--text);
+        transition: var(--tr3);
     }
 
     .menu-mask {
