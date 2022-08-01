@@ -324,7 +324,7 @@
         color: var(--text);
     }
     .recommend-m .box {
-        margin-top: 5px;
+        margin-top: 8px;
         display: flex;
         align-items: center;
     }
@@ -503,7 +503,7 @@
         color: var(--theme);
     }
     .main-m .box .title {
-        line-height: 1.5;
+        line-height: 1.4;
         word-break: break-all;
         text-overflow: ellipsis;
         display: -webkit-box;
