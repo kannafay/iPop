@@ -1,0 +1,580 @@
+@media screen and (max-width: 1260px) {
+
+    /* init.css */
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* single.css */
+    .single .top {
+        padding: 0;
+        width: calc(100% - 40px);
+    }
+
+    /* main.css */
+    .main .post ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    /* header.css */
+    .headroom--not-top {
+        transform: translateY(0);
+    }
+    .header {
+        display: none;
+    }
+    .header-m {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        background-color: var(--bgc-filter);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--border);
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+    .navbar-m {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .navbar-m .left .menu-btn,
+    .navbar-m .right .search-btn-m {
+        display: flex;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+    }
+    .navbar-m .left .menu-btn {
+        justify-content: left;
+    }
+    .navbar-m .right .search-btn-m {
+        justify-content: right;
+    }
+    .navbar-m .left .menu-btn span,
+    .navbar-m .right .search-btn-m span {
+        font-size: 20px;
+        color: var(--text);
+    }
+
+    .menu-mask {
+        display: block;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: #FFFFFF80;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s;
+        z-index: 20;
+    }
+    .menu-mask-o {
+        visibility: visible;
+        opacity: 1;
+    }
+    .menu-m {
+        display: block;
+        width: 70%;
+        height: 100%;
+        background-color: var(--bgc);
+        border-radius: 0 var(--radius-large) var(--radius-large) 0;
+        box-shadow: var(--box);
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        transform: translateX(calc(-100% - 10px));
+        transition: var(--tr6);
+        z-index: 30;
+    }
+    .menu-m-o {
+        transform: translateX(0);
+    }
+    .menu-m .top {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 19px 20px;
+    }
+    .menu-m .top-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu-m .top-box .time-tip span {
+        font-size: 16px;
+        margin-right: 10px;
+        color: var(--text-info);
+        vertical-align: middle;
+    }
+    .menu-m .top-box .time-tip p {
+        display: inline-flex;
+        font-size: 12px;
+        color: var(--text-info);
+    }
+    .menu-m .top-box .menu-btn-c {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .menu-m .top-box .menu-btn-c span {
+        font-size: 18px;
+        color: var(--text);
+        cursor: pointer;
+    }
+
+    .menu-m .center {
+        margin-top: 72px;
+        padding: 5px 20px;
+        height: calc(100% - 150px);
+        overflow: auto;
+    }
+    .menu-m .center::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    .menu-m .center .user-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .menu-m .center .user-box img {
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .menu-m .center .user-box p {
+        color: var(--text);
+        font-size: 14px;
+    }
+
+    .menu-m .center .menu-box .nav-m li {
+        margin-bottom: 10px;
+    }
+    .menu-m .center .menu-box .nav-m li:last-child {
+        margin-bottom: 0;
+    }
+    .menu-m .center .menu-box .nav-m a {
+        display: block;
+        width: 100%;
+        padding: 6px 10px;
+        font-size: 14px;
+        color: var(--text-sub);
+        border-radius: var(--radius-sub);
+    }
+    .menu-m .center .menu-box .nav-m a:hover {
+        background-color: var(--bgc-sub);
+    }
+    .menu-m .center .menu-box .nav-m .current-menu-item a {
+        color: var(--text-box);
+        background-color: var(--theme);
+        background: linear-gradient(to right, var(--theme), var(--theme-sub));
+    }
+
+    .menu-m .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .menu-m .bottom .left a {
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+    .menu-m .bottom .left a img {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .menu-m .bottom .right {
+        display: flex;
+        align-items: center;
+    }
+    .menu-m .bottom .right a {
+        display: block;
+        padding: 2px 8px;
+        border-radius: var(--radius-sub);
+        margin-right: 10px;
+    }
+    .menu-m .bottom .right a:last-child {
+        margin-right: 0;
+    }
+    .menu-m .bottom .right span {
+        font-size: 14px;
+        vertical-align: middle;
+        color: var(--text-box);
+        margin-right: 5px;
+    }
+    .menu-m .bottom .right p {
+        display: inline-block;
+        font-size: 12px;
+        color: var(--text-box);
+    }
+    .menu-m .bottom .right .setting {
+        background-color: var(--bgc-sub);
+    }
+    .menu-m .bottom .right .setting:hover {
+        background-color: var(--theme);
+        background: linear-gradient(to right, var(--theme), var(--theme-sub));
+    }
+    .menu-m .bottom .right .setting span,
+    .menu-m .bottom .right .setting p {
+        color: var(--text-sub);
+    }
+    .menu-m .bottom .right .setting:hover span,
+    .menu-m .bottom .right .setting:hover p {
+        color: var(--text-box);
+    }
+    .menu-m .bottom .right .logout {
+        background-color: var(--danger);
+    }
+    
+    .menu-m .bottom .right .visitor {
+        background-color: var(--bgc-sub);
+        border-radius: var(--radius-sub);
+    }
+    .menu-m .bottom .right .visitor:hover {
+        background-color: var(--theme);
+    }
+    .menu-m .bottom .right .visitor span {
+        color: var(--text-sub);
+        vertical-align: middle;
+    }
+    .menu-m .bottom .right .visitor p {
+        font-size: 12px;
+        color: var(--text-sub);
+    }
+    .menu-m .bottom .right .visitor:hover span,
+    .menu-m .bottom .right .visitor:hover p {
+        color: var(--text-box);
+    }
+
+    /* home.css */
+    .recommend {
+        display: none;
+    }
+    .recommend-m {
+        display: block;
+    }
+    .recommend-m .pic {
+        display: block;
+        width: 100%;
+        height: 0;
+        padding-bottom: 50%;
+        border-radius: var(--radius);
+        position: relative;
+        overflow: hidden;
+    }
+    .recommend-m .pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        vertical-align: middle;
+        position: absolute;
+    }
+    .recommend-m .pic .cate {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 4px 16px;
+        background-color: var(--bgc-filter);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        border-radius: var(--radius-sub);
+    }
+    .recommend-m .pic .cate,
+    .recommend-m .pic .cate a {
+        color: var(--text);
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .recommend-m .title {
+        margin-top: 20px;
+        line-height: 1.5;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+    .recommend-m .title a {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--text);
+    }
+    .recommend-m .box {
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .recommend-m .box > * {
+        margin-right: 20px;
+    }
+    .recommend-m .date,
+    .recommend-m .date span,
+    .recommend-m .views,
+    .recommend-m .views span,
+    .recommend-m .comments,
+    .recommend-m .comments span,
+    .recommend-m .comments a {
+        color: var(--text-sub);
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    /* single.css */
+    .single .top {
+        top: 90px;
+        height: 400px;
+    }
+    .single .box {
+        margin-top: 390px;
+    }
+
+    /* main.css */
+    .home, .category, .author {
+        margin-top: 90px;
+    }
+    .main .post ul {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    /* single.css */
+    .single .box .content {
+        width: 100%;
+    }
+
+    /* searchform.css */
+    .searchform {
+        padding: 0 20px;
+    }
+    .searchform .search {
+        width: calc(100% - 40px);
+    }
+}
+@media screen and (max-width: 640px) {
+
+    /* single.css */
+    
+    .single {
+        padding: 0;
+    }
+    .single .top {
+        top: 0;
+        width: 100%;
+        height: 350px;
+    }
+    .single .top::before {
+        background-color: rgba(0 0 0 / .3);
+    }
+    .single .top img {
+        border-radius: 0;
+    }
+
+    .single .box {
+        margin-top: 330px;
+    }
+    .single .box .content {
+        padding: 30px 20px 20px 20px;
+        background-color: var(--bgc);
+        box-shadow: none;
+    }
+    .single .box .content .cate, 
+    .single .box .content .cate a {
+        font-size: 14px;
+        text-transform: Uppercase
+    }
+    .single .box .content .title {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .single .box .content .info > div {
+        margin-right: 10px;
+    }
+
+    /* home.css */
+    .recommend-m .pic .cate {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 2px 16px;
+    }
+    .recommend-m .title {
+        margin-top: 15px;
+    }
+    .recommend-m .title a {
+        font-size: 18px;
+    }
+    .recommend-m .date,
+    .recommend-m .date span,
+    .recommend-m .views,
+    .recommend-m .views span,
+    .recommend-m .comments,
+    .recommend-m .comments span,
+    .recommend-m .comments a {
+        font-size: 12px;
+    }
+    .home .type {
+        margin-top: 20px;
+    }
+
+    /* main.css */
+    .main .post ul {
+        grid-template-columns: 1fr;
+    }
+    .home .type, 
+    .category .type, 
+    .author .type {
+        font-size: 24px;
+    }
+    .main {
+        display: none;
+    }
+    .main-m {
+        display: block;
+        margin-top: 20px;
+    }
+    .main-m ul li {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .main-m ul li:last-child {
+        margin-bottom: 0;
+    }
+    .main-m .pic {
+        width: 100px;
+        height: 100px;
+        border-radius: var(--radius-large);
+        overflow: hidden;
+        margin-right: 20px;
+    }
+    .main-m .pic a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .main-m .pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        vertical-align: middle;
+    }
+    .main-m .box {
+        width: calc(100% - 120px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .main-m .box .cate {
+        white-space: nowrap;
+        overflow: auto;
+    }
+    .main-m .box .cate::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    .main-m .box .cate a {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--theme);
+    }
+    .main-m .box .title {
+        line-height: 1.2;
+        margin-top: 6px;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+    .main-m .box .title a {
+        font-size: 15px;
+        color: var(--text);
+    }
+    .main-m .box .info {
+        display: flex;
+        margin-top: 5px;
+    }
+    .main-m .box .info .date,
+    .main-m .box .info .date span,
+    .main-m .box .info .views,
+    .main-m .box .info .views span,
+    .main-m .box .info .sticky,
+    .main-m .box .info .sticky span {
+        font-size: 12px;
+        font-weight: 300;
+        color: var(--text-sub);
+    }
+    .main-m .box .info > * {
+        margin-right: 10px;
+    }
+    .main-m .box .info > *:last-child {
+        margin-right: 0;
+    }
+
+    /* footer.css */
+    .footer {
+        margin: 30px 0;
+    }
+    .footer,
+    .footer a {
+        font-size: 14px;
+    }
+
+    /* searchform.css */
+    .searchform .search {
+        padding: 30px 20px;
+    }
+    .searchform .search .title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .searchform .search .title span {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+    .searchform .search .form-box {
+        margin-bottom: 25px;
+        height: 40px;
+    }
+    .searchform .search .form-box input {
+        font-size: 14px;
+        border-radius: 20px;
+    }
+    .searchform .search .btn {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .menu-m .bottom .right p {
+        display: none;
+    }
+    .menu-m .bottom .right span {
+        margin-right: 0;
+    }
+}

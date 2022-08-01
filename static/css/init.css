@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.ttf');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+:root {
+    --theme: #8183FF;
+    --theme-sub: #A1A1F7;
+    --text: #3D3D3D;
+    --text-sub: #5D5D5D;
+    --text-info: #999999;
+    --text-box: #F5F5F5;
+    --border: #E3E3E3;
+    --danger: #FA5151;
+    --bgc: #FFFFFF;
+    --bgc-sub: #F5F5F5;
+    --bgc-0: #FFFFFF00;
+    --bgc-filter: rgba(255 255 255 / .8);
+    --box: 0 0 10px rgba(0 0 0 / .1);
+    --box-hover: 0 2px 8px rgb(28 31 35 / 3%), 0 16px 48px 8px rgb(28 31 35 / 12%);
+    --radius-large: 20px;
+    --radius: 10px;
+    --radius-sub: 6px;
+    --tr3: all .3s; 
+    --tr6: all .6s cubic-bezier(.28,.9,.34,.99);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    -webkit-tap-highlight-color:rgba(0 0 0 / 0) ;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}

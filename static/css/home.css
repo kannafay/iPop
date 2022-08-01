@@ -1,0 +1,124 @@
+/* recommend.php */
+.recommend {
+    height: 400px;
+    background-color: var(--bgc-sub);
+    border-radius: var(--radius-large);
+    overflow: hidden;
+    display: flex;
+}
+.recommend .pic {
+    width: 60%;
+    position: relative;
+}
+.recommend .pic::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to right, var(--bgc-0) 50%, var(--bgc-sub) 100%);
+}
+.recommend .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.recommend .box {
+    width: 40%;
+    position: relative;
+}
+.recommend .box .content {
+    width: 130%;
+    height: 300px;
+    background-color: var(--bgc-filter);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    border-radius: var(--radius-large);
+    box-shadow: var(--box);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px 30px 30px;
+    transition: var(--tr3);
+}
+.recommend .box .content:hover {
+    box-shadow: var(--box-hover);
+}
+.recommend .content .cate,
+.recommend .content .cate a {
+    font-size: 18px;
+    color: var(--theme);
+}
+.recommend .content .title {
+    margin-top: 10px;
+    line-height: 1.5;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.recommend .content .title a {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+}
+.recommend .content .excerpt {
+    margin-top: 5px;
+    font-weight: 300;
+    color: var(--text-info);
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.recommend .content .readmore {
+    text-align: right;
+}
+.recommend .content .readmore a {
+    display: inline-block;
+    padding: 6px 20px;
+    background-color: var(--theme);
+    background: linear-gradient(to right, var(--theme), var(--theme-sub));
+    color: var(--text-box);
+    font-size: 14px;
+    border-radius: var(--radius-sub);
+}
+.recommend .box .info {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 50px;
+}
+.recommend .box .info > div {
+    margin-right: 20px;
+}
+.recommend .box .info .date,
+.recommend .box .info .date span,
+.recommend .box .info .views,
+.recommend .box .info .views span,
+.recommend .box .info .comments,
+.recommend .box .info .comments span,
+.recommend .box .info .comments a {
+    color: var(--text-sub);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* 移动端 */
+.recommend-m {
+    display: none;
+}

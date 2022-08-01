@@ -1,0 +1,181 @@
+.headroom {
+    transition: var(--tr3);
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.header {
+    display: block;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    padding: 20px 20px 0 20px;
+    z-index: 10;
+}
+.navbar {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgc-filter);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: var(--tr3);
+}
+.navbar:hover {
+    box-shadow: var(--box-hover);
+}
+.navbar .left {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 200px);
+    overflow: auto;
+}
+.navbar .left::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.navbar .left .logo {
+    margin-right: 20px;
+}
+.navbar .left img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+.navbar .nav ul {
+    display: flex;
+}
+.navbar .nav ul li {
+    margin-right: 10px;
+}
+.navbar .nav ul li:last-child {
+    margin-right: 0;
+}
+.navbar .nav ul li a {
+    display: block;
+    padding: 5px 12px;
+    border-radius: var(--radius-sub);
+    color: var(--text);
+    font-size: 14px;
+    white-space: nowrap;
+}
+.navbar .nav ul li a:hover {
+    background-color: var(--bgc-sub);
+}
+.navbar .nav ul .current-menu-item a {
+    background-color: var(--theme);
+    background: linear-gradient(to right, var(--theme), var(--theme-sub));
+    color: var(--text-box);
+}
+
+.navbar .right {
+    height: 40px;
+    position: relative;
+}
+.navbar .right .user {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    cursor: pointer;
+}
+.navbar .right .visitor {
+    width: auto;
+}
+.navbar .right .user p {
+    color: var(--text);
+    margin-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.navbar .right .user p::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.navbar .right .user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.navbar .right .menu {
+    position: absolute;
+    right: -20px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: var(--tr3);
+}
+
+.navbar .right .user:hover ~ .menu,
+.navbar .right .menu:hover {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar .right .menu .box {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: var(--radius);
+    background-color: var(--bgc);
+    box-shadow: var(--box);
+}
+.navbar .right .menu .box a {
+    display: block;
+    padding: 5px 10px;
+    border-radius: var(--radius-sub);
+    margin-bottom: 10px;
+    background-color: var(--bgc-sub);
+}
+.navbar .right .menu .box .logout {
+    margin-bottom: 0;
+}
+.navbar .right .menu .box .search-btn,
+.navbar .right .menu .box .search-btn2 {
+    cursor: pointer;
+}
+.navbar .right .menu .box a {
+    font-size: 14px;
+    color: var(--text);
+}
+.navbar .right .menu .box a span {
+    font-size: 12px;
+    color: var(--text);
+}
+.navbar .right .menu .box a span:last-child {
+    margin-left: 50px;
+}
+.navbar .right .menu .box a:hover,
+.navbar .right .menu .box a:hover span {
+    color: var(--text-box);
+}
+.navbar .right .menu .box a span:first-child {
+    margin-right: 5px;
+}
+.navbar .right .menu .box .search-btn:hover,
+.navbar .right .menu .box .setting:hover {
+    background-color: var(--theme);
+    background: linear-gradient(to right, var(--theme), var(--theme-sub));
+}
+.navbar .right .menu .box .logout:hover {
+    background-color: var(--danger);
+}
+
+/* 移动端 */
+.header-m,
+.menu-m,
+.menu-mask {
+    display: none;
+}

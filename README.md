@@ -4,9 +4,9 @@
 
 > The theme is inspired by foreign app design works. Thank their designers for their exquisite creation. A simple, elegant and fashionable wordpress blog theme. So there is no other fancy content. The theme is all in English, because I want to be international. If you want to support Chinese, you can modify the content of the file by yourself. Please understand, thank you!
 
-本项目支持MIT开源协议
+本项目支持MIT开源协议。
 
-> This project supports MIT open source protocol
+> This project supports MIT open source protocol.
 
 ## 官网网站 Official Website
 
@@ -19,3 +19,9 @@
 请从[Releases](../../releases)下载，master分支为开发版。
 
 > Please download from [Releases](../../releases). The master branch is the development version. 
+
+## 温馨提示 Warm Prompt
+
+主题砍掉了许多功能，望悉知。
+
+> The theme has cut down many functions. I hope you know.

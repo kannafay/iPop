@@ -1,0 +1,96 @@
+.single {
+    margin-top: 140px;
+}
+.single .top {
+    height: 500px;
+    position: fixed;
+    top: 140px;
+    transition: var(--tr3);
+    z-index: -1;
+}
+.single .top::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.single .top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: var(--radius-large);
+}
+.single .box {
+    width: 100%;
+    margin-top: 490px;
+}
+.single .box .content {
+    width: 800px;
+    height: auto;
+    background-color: var(--bgc-filter);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: var(--radius-large);
+    box-shadow: var(--box);
+    padding: 30px 40px 40px 40px;
+    margin: 0 auto;
+}
+.single .box .content .cate,
+.single .box .content .cate a {
+    font-size: 18px;
+    color: var(--theme);
+}
+.single .box .content .title {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--text);
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.single .box .content .info {
+    margin-top: 10px;
+    display: flex;
+}
+.single .box .content .info > div {
+    margin-right: 20px;
+}
+.single .box .content .info .date,
+.single .box .content .info .date span,
+.single .box .content .info .views,
+.single .box .content .info .views span,
+.single .box .content .info .comments,
+.single .box .content .info .comments a,
+.single .box .content .info .comments span {
+    color: var(--text-sub);
+    font-size: 14px;
+    font-weight: 300;
+}
+.single .box .content .author {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.single .box .content .author > a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sub);
+    overflow: hidden;
+    margin-right: 10px;
+}
+.single .box .content .author a img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.single .box .content .author span a {
+    color: var(--text);
+}
+.single .box .content .text {
+    margin-top: 30px;
+}

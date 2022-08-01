@@ -1,0 +1,233 @@
+.text {
+    width: 100%;
+}
+.text > * {
+    width: 100%;
+    margin-top: 20px;
+    color: var(--text);
+}
+
+/* 文本 */
+.text p,
+.text a,
+.text h1,
+.text h2,
+.text h3,
+.text h4,
+.text h5,
+.text h6 {
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: justify;
+}
+
+/* 居中 */
+.text .has-text-align-center {
+    text-align: center;
+}
+.text .has-text-align-right {
+    text-align: right;
+}
+
+/* 文本高亮 */
+.text .has-black-color {
+    color: #000;
+}
+.text .has-cyan-bluish-gray-color {
+    color: #abb8c3;
+}
+.text .has-white-color {
+    color: var(--text-keep);
+}
+.text .has-pale-pink-color {
+    color: #f78da7;
+}
+.text .has-vivid-red-color {
+    color: #cf2e2e;
+}
+.text .has-luminous-vivid-orange-color {
+    color: #ff6900;
+}
+.text .has-luminous-vivid-amber-color {
+    color: #fcb900;
+}
+.text .has-light-green-cyan-color {
+    color: #7bdcb5;
+}
+.text .has-vivid-green-cyan-color {
+    color: #00d084;
+}
+.text .has-pale-cyan-blue-color {
+    color: #8ed1fc;
+}
+.text .has-vivid-cyan-blue-color {
+    color: #0693e3;
+}
+.text .has-vivid-purple-color {
+    color: #9b51e0;
+}
+
+/* 超链接 */
+.text a {
+    color: var(--theme);
+}
+.text a:hover {
+    text-decoration: underline;
+}
+
+/* 图片 */
+.text .wp-block-image {
+    border-radius: var(--radius-sub);
+    overflow: hidden;
+}
+.text .wp-block-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+/* 视频 */
+.text .wp-block-video {
+    width: 100%;
+    padding-bottom: 60%;
+    position: relative;
+    background-color: #000000;
+    border-radius: var(--radius-sub);
+    overflow: hidden;
+}
+.text .wp-block-video video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/* 引用 */
+.text .wp-block-quote {
+    border-left: 4px solid var(--theme);
+    padding: 10px;
+    color: var(--text-info);
+}
+.text .wp-block-quote cite {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+/* 标题 */
+.text h1 {
+    font-size: 28px;
+    position: relative;
+
+}
+.text h2 {
+    font-size: 24px;
+    position: relative;
+}
+.text h3 {
+    font-size: 20px;
+    position: relative;
+}
+.text h4 {
+    font-size: 17px;
+    position: relative;
+ 
+}
+.text h5 {
+    font-size: 15px;
+    position: relative;
+}
+.text h6 {
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+}
+.text h4::after,
+.text h3::after,
+.text h2::after,
+.text h1::after {
+    content: '';
+    height: 4px;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    border-radius: var(--radius-sub);
+    background-color: var(--theme);
+    box-shadow: 1px 1px 5px -1px var(--theme-sub);
+}
+.text h4::after {
+    width: 30px;
+}
+.text h3::after{
+    width: 40px;
+}
+.text h2::after{
+    width: 60px;
+}
+.text h1::after{
+    width: 80px;
+}
+
+/* 列表 */
+.text ul,
+.text ol {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.text ul li,
+.text ol li {
+    margin-left: 20px;
+    width: calc(100% - 40px);
+    word-break : break-all;
+    word-wrap: break-word;
+}
+.text ul li{
+    list-style: disc;
+}
+.text ol li {
+    list-style: auto;
+}
+
+/* 行内代码 */
+.text code {
+    font-size: 14px;
+    font-family: 'Consolas', 'Poppins', 'monospace';
+    color: var(--text);
+    border: 1px solid var(--text-sub);
+    padding: 2px 4px;
+}
+
+/* 代码框 */
+.text pre {
+    padding: 10px 15px;
+    border: 1px solid var(--text-sub);
+    max-height: 512px;
+    overflow: auto;
+}
+.text pre code {
+    border: 0;
+    padding: 0;
+}
+
+/* 表格 */
+.text .wp-block-table {
+    overflow-x: auto;
+}
+.text .wp-block-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.text .wp-block-table table th, 
+.text .wp-block-table table td {
+    font-size: 15px;
+    border: 1px solid var(--text-sub);
+    padding: 10px;
+    text-align: left;
+}
+
+/* 附件 */
+.text .attachment a img {
+    vertical-align: middle;
+}

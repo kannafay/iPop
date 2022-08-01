@@ -1,0 +1,11 @@
+.footer {
+    margin: 50px auto;
+    text-align: center;
+}
+.footer,
+.footer a {
+    color: var(--text-sub);
+}
+.footer a:hover {
+    color: var(--theme);
+}

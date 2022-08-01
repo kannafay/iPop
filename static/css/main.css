@@ -1,0 +1,195 @@
+/* type */
+.home,
+.category,
+.author {
+    margin-top: 140px;
+}
+.home .type,
+.category .type,
+.author .type {
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text);
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.home .type span,
+.category .type span,
+.author .type span {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-info);
+}
+
+/* main.php */
+.main {
+    margin-top: 30px;
+}
+.main .post ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px 20px;
+}
+.main .post ul li {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius);
+}
+.main .post ul li .pic {
+    height: 150px;
+    position: relative;
+}
+.main .post ul li .pic::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.main .post ul li .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+.main .post ul li .box {
+    width: 100%;
+    height: 200px;
+    background-color: var(--bgc-sub);
+    position: relative;
+    padding: 0 10px;
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+.main .post ul li .box .content {
+    width: calc(100% - 20px);
+    height: 100%;
+    background-color: var(--bgc-filter);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    bottom: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--box);
+    padding: 10px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--tr3);
+}
+.main .post ul li .box .content:hover {
+    box-shadow: var(--box-hover);
+}
+.main .post ul li .box .content .cate {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.main .post ul li .box .content .cate,
+.main .post ul li .box .content .cate a {
+    font-size: 14px;
+    color: var(--theme);
+}
+.main .post ul li .box .content .title {
+    margin-top: 5px;
+    line-height: 1.2;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.main .post ul li .box .content .title a {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+}
+.main .post ul li .box .content .excerpt {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--text-info);
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.main .post ul li .box .content .readmore {
+    text-align: right;
+}
+.main .post ul li .box .content .readmore a {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: var(--theme);
+    background: linear-gradient(to right, var(--theme), var(--theme-sub));
+    color: var(--text-box);
+    font-size: 12px;
+    border-radius: var(--radius-sub);
+}
+.main .post ul li .box .info {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.main .post ul li .box .info .date,
+.main .post ul li .box .info .date span,
+.main .post ul li .box .info .views,
+.main .post ul li .box .info .views span,
+.main .post ul li .box .info .sticky,
+.main .post ul li .box .info .sticky span {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--text-sub);
+}
+.main .post ul li .box .info > * {
+    margin-right: 10px;
+}
+.main .post ul li .box .info > *:last-child {
+    margin-right: 0;
+}
+
+/* pagination-ajax.php */
+#pagination {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pagination a {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 6px 20px;
+    background-color: var(--bgc-sub);
+    border-radius: var(--radius-large);
+    color: var(--text-sub);
+}
+#pagination a:hover {
+    color: var(--theme);
+}
+
+.main .no-post,
+.main-m .no-post {
+    width: 100%;
+    color: var(--text-sub);
+}
+
+/* 移动端 */
+.main-m {
+    display: none;
+}
+.main-m .no-post {
+    text-align: center;
+    font-size: 14px;
+}
