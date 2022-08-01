@@ -503,8 +503,7 @@
         color: var(--theme);
     }
     .main-m .box .title {
-        line-height: 1.2;
-        margin-top: 6px;
+        line-height: 1.5;
         word-break: break-all;
         text-overflow: ellipsis;
         display: -webkit-box;
