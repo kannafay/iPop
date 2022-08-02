@@ -354,8 +354,12 @@
     }
 
     /* main.css */
-    .home, .category, .author {
+    .home {
         margin-top: 90px;
+    }
+    .index .type,
+    .author .type {
+        margin-top: 20px;
     }
     .main .post ul {
         grid-template-columns: 1fr 1fr;
@@ -439,18 +443,14 @@
         font-size: 12px;
     }
     .home .type {
-        margin-top: 20px;
+        font-size: 24px;
     }
 
     /* main.css */
     .main .post ul {
         grid-template-columns: 1fr;
     }
-    .home .type, 
-    .category .type, 
-    .author .type {
-        font-size: 24px;
-    }
+    
     .main {
         display: none;
     }
@@ -537,15 +537,6 @@
         margin-right: 0;
     }
 
-    /* footer.css */
-    .footer {
-        margin: 30px 0;
-    }
-    .footer,
-    .footer a {
-        font-size: 14px;
-    }
-
     /* searchform.css */
     .searchform .search {
         padding: 30px 20px;
@@ -568,6 +559,15 @@
     }
     .searchform .search .btn {
         font-size: 12px;
+    }
+
+    /* footer.css */
+    .footer .footer-box {
+        padding: 30px 0;
+    }
+    .footer .footer-box,
+    .footer .footer-box a {
+        font-size: 14px;
     }
 }
 

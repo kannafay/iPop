@@ -1,11 +1,14 @@
 .footer {
-    margin: 50px auto;
+    margin-top: auto;
+}
+.footer .footer-box {
+    padding: 50px 0;
     text-align: center;
 }
-.footer,
-.footer a {
+.footer .footer-box,
+.footer .footer-box a {
     color: var(--text-sub);
 }
-.footer a:hover {
+.footer .footer-box a:hover {
     color: var(--theme);
 }

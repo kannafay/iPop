@@ -1,25 +1,22 @@
 /* type */
-.home,
-.category,
-.author {
+.home {
     margin-top: 140px;
 }
-.home .type,
-.category .type,
-.author .type {
-    margin-top: 50px;
+.home .type {
     font-size: 36px;
     font-weight: 700;
     color: var(--text);
     word-break: break-all;
     word-wrap: break-word;
 }
-.home .type span,
-.category .type span,
-.author .type span {
+.home .type span {
     font-size: 16px;
     font-weight: 400;
     color: var(--text-info);
+}
+.index .type,
+.author .type {
+    margin-top: 50px;
 }
 
 /* main.php */
