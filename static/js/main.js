@@ -38,31 +38,6 @@ menu_mask.onclick = function() {
   this.className = 'menu-mask'
 }
 
-// 根据时间段提示
-let date = new Date()
-let hour = date.getHours();
-const date_icon = document.querySelector('.menu-m .time-tip span')
-const date_text = document.querySelector('.menu-m .time-tip p')
-if(hour >= 6 && hour <= 7) {
-  date_icon.className = 'iconfont icon-a-partlycloudy_01'
-  date_text.innerText = 'Good morning!'
-} else if(hour >= 8 && hour <= 11) {
-  date_icon.className = 'iconfont icon-sunny'
-  date_text.innerText = 'Good morning!'
-} else if(hour == 12) {
-  date_icon.className = 'iconfont icon-sunny'
-  date_text.innerText = 'Good noon!'
-} else if(hour >= 13 && hour <= 18) {
-  date_icon.className = 'iconfont icon-a-partlycloudy_01'
-  date_text.innerText = 'Good afternoon!'
-} else if(hour >= 19 && hour <= 23){
-  date_icon.className = 'iconfont icon-moon'
-  date_text.innerText = 'Good evening!'
-} else {
-  date_icon.className = 'iconfont icon-a-cloudyatnight'
-  date_text.innerText = 'Late at night!'
-}
-
 // 搜索
 const search_btn = document.querySelector('.header .search-btn') // pc端按钮
 const search_btn_m = document.querySelector('.header-m .search-btn-m') //移动端按钮

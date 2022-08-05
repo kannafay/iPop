@@ -77,7 +77,7 @@
 }
 .searchform .search .btn {
     padding: 6px 20px;
-    border-radius: var(--radius);
+    border-radius: var(--radius-sub);
     background-color: var(--bgc-sub);
     color: var(--text-sub);
     font-size: 14px;

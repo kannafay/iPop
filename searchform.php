@@ -4,11 +4,11 @@
     <div class="searchform-mask"></div>
 
     <div class="search">
-        <div class="title"><span class="iconfont icon-sousuo1"></span>Search</div>
+        <div class="title"><span class="iconfont icon-sousuo1"></span><?php _e('Search','poppins'); ?></div>
         <form class="form-box" role="search" method="get" id="searchform" action="<?php bloginfo('url') ?>">
-        	<input type="text" value="<?php the_search_query(); ?>" name="s" id="s" placeholder="Make good use of search!"/>
+        	<input type="text" value="<?php the_search_query(); ?>" name="s" id="s" placeholder="<?php _e('Make good use of search!','poppins'); ?>"/>
         </form>
-        <div class="btn">Cancel</div>
+        <div class="btn"><?php _e('Cancel','poppins'); ?></div>
     </div>
 
 </section>

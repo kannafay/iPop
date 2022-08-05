@@ -82,9 +82,6 @@ class WP_User_Profile_Avatar {
 		// Activation - works with symlinks
 		register_activation_hook( basename( dirname( __FILE__ ) ) . '/' . basename( __FILE__ ), array( $this, 'activate' ) );
 
-		// Actions
-		add_action( 'after_setup_theme', array( $this, 'load_plugin_textdomain' ) );
-
 		add_action( 'wp_enqueue_scripts', array( $this, 'frontend_scripts' ) );
 		
 		add_action( 'admin_init', array( $this, 'updater' ) );
@@ -128,17 +125,6 @@ class WP_User_Profile_Avatar {
      * @return 
      * @since 1.0
      */
-	public function load_plugin_textdomain() {
-
-		$domain = 'wp-user-profile-avatar';       
-
-        $locale = apply_filters('plugin_locale', get_locale(), $domain);
-
-		load_textdomain( $domain, WP_LANG_DIR . "/wp-user-profile-avatar/".$domain."-" .$locale. ".mo" );
-
-		load_plugin_textdomain($domain, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-	}
-
 	/**
      * frontend_scripts function.
      *

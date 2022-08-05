@@ -18,9 +18,9 @@
                 </div>
                 <div class="menu">
                     <div class="box">
-                        <a class="search-btn"><span class="iconfont icon-sousuo1"></span>Search<span class="iconfont icon-right"></span></a>
-                        <a class="setting" href="<?php echo home_url().'/wp-admin'; ?>" target="_blank"><span class="iconfont icon-setting"></span>Setting<span class="iconfont icon-right"></span></a>
-                        <a class="logout" href="<?php echo wp_logout_url(); ?>"><span class="iconfont icon-poweroff"></span>Logout<span class="iconfont icon-right"></span></a>   
+                        <a class="search-btn"><span class="iconfont icon-sousuo1"></span><?php _e('Search','poppins'); ?><span class="iconfont icon-right"></span></a>
+                        <a class="setting" href="<?php echo home_url().'/wp-admin'; ?>" target="_blank"><span class="iconfont icon-setting"></span><?php _e('Setting','poppins'); ?><span class="iconfont icon-right"></span></a>
+                        <a class="logout" href="<?php echo wp_logout_url(); ?>"><span class="iconfont icon-poweroff"></span><?php _e('Logout','poppins'); ?><span class="iconfont icon-right"></span></a>   
                     </div>
                 </div>
             <?php } else { ?>
@@ -29,8 +29,8 @@
                 </div>
                 <div class="menu">
                     <div class="box">
-                        <a class="search-btn"><span class="iconfont icon-sousuo1"></span>Search<span class="iconfont icon-right"></span></a>
-                        <a class="login" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-login1"></span>Login<span class="iconfont icon-right"></span></a>
+                        <a class="search-btn"><span class="iconfont icon-sousuo1"></span><?php _e('Search','poppins'); ?><span class="iconfont icon-right"></span></a>
+                        <a class="login" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-login1"></span><?php _e('Login','poppins'); ?><span class="iconfont icon-right"></span></a>
                     </div>
                 </div>
             <? } ?>
@@ -53,7 +53,7 @@
 <section class="menu-m">
     <div class="top">
         <div class="top-box">
-            <div class="time-tip"><span class="iconfont icon-a-partlycloudy_01"></span><p></p></div>
+            <?php require_once('inc/time-prompt.php'); ?>
             <div class="menu-btn-c"><span class="iconfont icon-doubleleft"></span></div>
         </div>
     </div>
@@ -78,14 +78,16 @@
         </div>
         <div class="right">
             <?php if(is_user_logged_in()) { ?>
-                <a class="setting" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-setting"></span><p>Setting</p></a>
-                <a class="logout" href="<?php echo wp_logout_url(); ?>"><span class="iconfont icon-poweroff"></span><p>Logout</p></a>
+                <a class="setting" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-setting"></span><p><?php _e('Setting','poppins'); ?></p></a>
+                <a class="logout" href="<?php echo wp_logout_url(); ?>"><span class="iconfont icon-poweroff"></span><p><?php _e('Logout','poppins'); ?></p></a>
             <?php } else { ?>
-                <a class="visitor" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-login1"></span><p>Login</p></a>
+                <a class="visitor" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-login1"></span><p><?php _e('Login','poppins'); ?></p></a>
             <?php } ?>
         </div>
     </div>
 </section>
+
+
 
 <!-- 搜索 -->
 <?php require_once('searchform.php'); ?>

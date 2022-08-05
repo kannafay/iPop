@@ -115,7 +115,7 @@ class WPUPA_Admin {
 				</th>
 				<td>
 					<p>
-						<input type="text" name="wpupa_url" id="wpupa_url" class="regular-text code" value="<?php echo $wpupa_url; ?>" placeholder="Enter Image URL">
+						<input type="text" name="wpupa_url" id="wpupa_url" class="regular-text code" value="<?php echo $wpupa_url; ?>" placeholder="<?php _e('Enter Image URL','wp-user-profile-avatar'); ?>">
 					</p>
 
 					<p><?php _e('OR Upload Image', 'wp-user-profile-avatar'); ?></p>

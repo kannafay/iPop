@@ -1,7 +1,7 @@
 <?php
 
 // 网站标题
-function show_wp_title(){
+function show_wp_title() {
     global $page, $paged;
     wp_title( '&#8211;', true, 'right' );
     bloginfo( 'name' );
@@ -10,8 +10,15 @@ function show_wp_title(){
         echo ' &#8211; ' . $site_description;
     }   
     if ( $paged >= 2 || $page >= 2 ) {
-        echo ' &#8211; ' . sprintf( 'Page %s', max( $paged, $page ) );
+        echo ' &#8211; ' . sprintf( __('Page %s','poppins'), max( $paged, $page ) );
     }   
+}
+
+function page_number() {
+    global $page, $paged;
+    if ( $paged >= 2 || $page >= 2 ) {
+        echo ' &#8211; ' . sprintf( __('Page %s','poppins'), max( $paged, $page ) );
+    }  
 }
 
 // 设定摘要长度
@@ -126,8 +133,8 @@ function setPostViews($postID) {
 add_action('admin_menu', 'pop_set');
 function pop_set(){
     add_menu_page(
-        'Poppins Setting', 
-        'Poppins Setting', 
+        __('Poppins Settings','poppins'), 
+        __('Poppins Settings','poppins'), 
         'edit_themes', 
         'pop_opt', 
         'pop_opt');}
@@ -164,32 +171,22 @@ function uctheme_redirect_blank_search( $query_variables ) {
     return $query_variables;
 }
 
-// 文章页码
-function wp_pagenavi() {
-    global $wp_query, $wp_rewrite;
-    $wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;  
-    $pagination = array(
-        'base' => @add_query_arg('paged','%#%'),
-        'format' => '',
-        'total' => $wp_query->max_num_pages,
-        'current' => $current,
-        'show_all' => false,
-        'type' => 'plain',
-        'end_size'=>'1',
-        'mid_size'=>'1',
-        'prev_text' => '<', //♂
-        'next_text' => '>' //♀
-    ); 
-    if( $wp_rewrite->using_permalinks() )
-        $pagination['base'] = user_trailingslashit( trailingslashit( remove_query_arg('s',get_pagenum_link(1) ) ) . 'page/%#%/', 'paged');
-    if( !empty($wp_query->query_vars['s']) )
-        $pagination['add_args'] = array('s'=>get_query_var('s'));
-    echo paginate_links($pagination);
-}
-
 // 登出后重定向
 function auto_redirect_after_logout(){
     wp_redirect(home_url());
     exit();
 }
 add_action('wp_logout','auto_redirect_after_logout');
+
+
+// 主题翻译
+function poppins_setup() {
+    load_theme_textdomain('poppins', get_template_directory() . '/languages');
+}
+add_action('init', 'poppins_setup');
+
+// 头像翻译
+function avatar_setup() {
+    load_theme_textdomain('wp-user-profile-avatar', get_template_directory() . '/admin/avatar/languages');
+}
+add_action('init', 'avatar_setup');

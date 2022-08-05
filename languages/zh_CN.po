@@ -1,0 +1,434 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Poppins\n"
+"POT-Creation-Date: 2022-08-05 15:03+0800\n"
+"PO-Revision-Date: 2022-08-05 15:03+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/avatar/admin/templates/shortcode-popup.php:3
+msgid "User Avatar"
+msgstr ""
+
+#: admin/avatar/admin/templates/shortcode-popup.php:4
+msgid "Upload Avatar"
+msgstr ""
+
+#: admin/avatar/admin/templates/shortcode-popup.php:13
+msgid "User Name"
+msgstr ""
+
+#: admin/avatar/admin/templates/shortcode-popup.php:16
+msgid "Select User"
+msgstr ""
+
+#: admin/avatar/admin/templates/shortcode-popup.php:26
+msgid "Size"
+msgstr ""
+
+#: admin/avatar/admin/templates/shortcode-popup.php:29
+#: admin/avatar/admin/templates/shortcode-popup.php:43
+#: admin/avatar/admin/templates/shortcode-popup.php:56
+msgid "None"
+msgstr ""
+
+#: admin/avatar/admin/templates/shortcode-popup.php:36
+msgid "size parameter only work for uploaded avatar not with custom url."
+msgstr ""
+
+#: admin/avatar/admin/templates/shortcode-popup.php:40
+msgid "Alignment"
+msgstr ""
+
+#: admin/avatar/admin/templates/shortcode-popup.php:53
+msgid "Link To"
+msgstr ""
+
+#: admin/avatar/admin/templates/shortcode-popup.php:63
+msgid "Add custom URL"
+msgstr ""
+
+#: admin/avatar/admin/templates/shortcode-popup.php:67
+msgid "Open link in a new window"
+msgstr ""
+
+#: admin/avatar/admin/templates/shortcode-popup.php:73
+msgid "Caption"
+msgstr ""
+
+#: admin/avatar/admin/templates/shortcode-popup.php:82
+#: admin/avatar/admin/templates/shortcode-popup.php:101
+msgid "Insert Shortcode"
+msgstr ""
+
+#: admin/avatar/admin/templates/shortcode-popup.php:93
+msgid "Shortcode"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-admin.php:53
+msgid "Profile Avatar Settings"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-admin.php:72
+#: admin/avatar/admin/wp-user-profile-avatar-admin.php:73
+#: admin/avatar/admin/wp-user-profile-avatar-admin.php:109
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:47
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:113
+msgid "WP User Profile Avatar"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-admin.php:75
+#: admin/avatar/wp-user-profile-avatar.php:145
+msgid "Choose Image: Default Avatar"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-admin.php:114
+msgid "Image"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-admin.php:118
+msgid "Enter Image URL"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-admin.php:121
+#: admin/avatar/templates/wp-avatar-upload.php:16
+msgid "OR Upload Image"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-admin.php:124
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:123
+msgid "Choose Image"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-admin.php:143
+#: admin/avatar/templates/wp-avatar-upload.php:39
+msgid "Original Size"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-admin.php:147
+#: admin/avatar/templates/wp-avatar-upload.php:43
+#: admin/avatar/wp-user-profile-avatar-functions.php:322
+msgid "Thumbnail"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-admin.php:150
+#: admin/avatar/templates/wp-avatar-upload.php:46
+msgid "Remove Image"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-admin.php:153
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:125
+#: admin/avatar/templates/wp-avatar-upload.php:49
+msgid "Undo"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:56
+msgid "Avatar Visibility"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:60
+msgid "Show Avatars"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:62
+msgid ""
+"If it is unchecked then it will not show the user avatar at profile and "
+"frontend side."
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:68
+#: admin/avatar/wp-user-profile-avatar.php:167
+msgid "Settings"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:72
+msgid "Add shortcode avatar button to Visual Editor"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:78
+msgid "Allow Contributors &amp; Subscribers to upload avatars"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:84
+msgid "Disable all default gravatar and set own custom default avatar."
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:93
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:96
+msgid "Avatar Rating"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:106
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:109
+msgid "Default Avatar"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:110
+msgid ""
+"For users without a custom avatar of their own, you can either display a "
+"generic logo or a generated one based on their e-mail address."
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:124
+msgid "Remove"
+msgstr ""
+
+#: admin/avatar/admin/wp-user-profile-avatar-settings.php:146
+#: admin/option.php:34
+msgid "Save Changes"
+msgstr "保存设置"
+
+#: admin/avatar/shortcodes/wp-user-profile-avatar-shortcodes.php:83
+#: admin/avatar/shortcodes/wp-user-profile-avatar-shortcodes.php:98
+#: admin/avatar/shortcodes/wp-user-profile-avatar-shortcodes.php:108
+msgid "ERROR: "
+msgstr ""
+
+#: admin/avatar/shortcodes/wp-user-profile-avatar-shortcodes.php:83
+#: admin/avatar/shortcodes/wp-user-profile-avatar-shortcodes.php:98
+#: admin/avatar/shortcodes/wp-user-profile-avatar-shortcodes.php:108
+msgid ""
+"You do not have enough priviledge to access this page. Please login to "
+"continue."
+msgstr ""
+
+#: admin/avatar/shortcodes/wp-user-profile-avatar-shortcodes.php:208
+msgid "Error! Select Image"
+msgstr ""
+
+#: admin/avatar/shortcodes/wp-user-profile-avatar-shortcodes.php:215
+msgid "Successfully Updated Avatar"
+msgstr ""
+
+#: admin/avatar/shortcodes/wp-user-profile-avatar-shortcodes.php:256
+msgid "Successfully Removed Avatar"
+msgstr ""
+
+#: admin/avatar/shortcodes/wp-user-profile-avatar-shortcodes.php:301
+msgid "Successfully Undo Avatar"
+msgstr ""
+
+#: admin/avatar/templates/wp-avatar-upload.php:56
+msgid "Update Profile"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:13
+msgid "G &#8212; Suitable for all audiences"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:14
+msgid "PG &#8212; Possibly offensive, usually for audiences 13 and above"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:15
+msgid "R &#8212; Intended for adult audiences above 17"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:16
+msgid "X &#8212; Even more mature than above"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:32
+msgid "Mystery Man"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:33
+msgid "Blank"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:34
+msgid "Gravatar Logo"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:35
+msgid "Identicon (Generated)"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:36
+msgid "Wavatar (Generated)"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:37
+msgid "MonsterID (Generated)"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:38
+msgid "Retro (Generated)"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:319
+msgid "Original"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:320
+msgid "Large"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:321
+msgid "Medium"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:338
+msgid "Center"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:339
+msgid "Left"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:340
+msgid "Right"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:356
+msgid "Image File"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:357
+msgid "Attachment Page"
+msgstr ""
+
+#: admin/avatar/wp-user-profile-avatar-functions.php:358
+msgid "Custom URL"
+msgstr ""
+
+#: admin/option.php:13 functions.php:136 functions.php:137
+msgid "Poppins Settings"
+msgstr "Poppins设置"
+
+#: admin/option.php:18
+msgid "Recommend"
+msgstr "首页推荐"
+
+#: admin/option.php:21
+msgid "Display at the top of the home. Fill in the post ID for one."
+msgstr "显示在首页顶部，填写一个文章ID。"
+
+#: admin/option.php:25
+msgid "Cover random picture"
+msgstr "随机封面"
+
+#: admin/option.php:28
+msgid "Replace when have no cover image. Fill in the picture API or URL."
+msgstr "文章没有封面时顶替，填写图片API或URL。"
+
+#: author.php:17
+msgid "Published"
+msgstr "发布的"
+
+#: category.php:7
+msgid "Category"
+msgstr "分类"
+
+#: functions.php:13 functions.php:20
+#, php-format
+msgid "Page %s"
+msgstr "第 %s 页"
+
+#: header.php:21 header.php:32 search.php:7 searchform.php:7
+msgid "Search"
+msgstr "搜索"
+
+#: header.php:22 header.php:81
+msgid "Setting"
+msgstr "设置"
+
+#: header.php:23 header.php:82
+msgid "Logout"
+msgstr "注销"
+
+#: header.php:33 header.php:84
+msgid "Login"
+msgstr "登录"
+
+#: inc/main.php:20 inc/recommend.php:24
+msgid "Read more"
+msgstr "阅读更多"
+
+#: inc/main.php:24 inc/main.php:58 inc/recommend.php:28 inc/recommend.php:47
+#: single.php:44
+msgid "Views"
+msgstr "浏览"
+
+#: inc/main.php:25 inc/main.php:59
+msgid "Sticky"
+msgstr "置顶"
+
+#: inc/main.php:31 inc/main.php:65
+msgid "Have no more!"
+msgstr "没有更多了！"
+
+#: inc/pagination-ajax.php:2 inc/pagination-ajax.php:20
+msgid "Click to see more"
+msgstr "查看更多"
+
+#: inc/pagination-ajax.php:10
+msgid "Loading..."
+msgstr "加载中..."
+
+#: inc/time-prompt.php:11 inc/time-prompt.php:14
+msgid "Good morning!"
+msgstr "早上好！"
+
+#: inc/time-prompt.php:17
+msgid "Good noon!"
+msgstr "中午好！"
+
+#: inc/time-prompt.php:20
+msgid "Good afternoon!"
+msgstr "下午好！"
+
+#: inc/time-prompt.php:23
+msgid "Good evening!"
+msgstr "晚上好！"
+
+#: inc/time-prompt.php:26
+msgid "Late at night!"
+msgstr "夜深了！"
+
+#: index.php:8
+msgid "Popular"
+msgstr "流行的"
+
+#: searchform.php:9
+msgid "Make good use of search!"
+msgstr "利用好搜索!"
+
+#: searchform.php:11
+msgid "Cancel"
+msgstr "取消搜索"
+
+#. Theme Name of the plugin/theme
+msgid "Poppins"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://www.poppins.cn"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "高级感设计WordPress主题（Advanced design WordPress blog theme）"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "神秘布偶猫"
+msgstr ""
+
+#~ msgid "All copyright."
+#~ msgstr "版权所有。"

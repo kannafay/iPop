@@ -14,7 +14,7 @@
                 <div class="social"></div>
             </div>
         </div>
-        <div class="type">Published<span><?php if($paged >= 2 || $page >= 2){echo' &#8211; '.sprintf('Page %s',max( $paged,$page));} ?></span></div>
+        <div class="type"><?php _e('Published','poppins'); ?><span><?php echo page_number(); ?></span></div>
         <?php require_once('inc/main.php'); ?>
         <?php require_once('inc/pagination-ajax.php'); ?>
     </section>
