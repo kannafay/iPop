@@ -4,6 +4,7 @@
         update_option("recommend",$_POST["recommend"]);
         update_option("random_pic",$_POST["random_pic"]);
         update_option("hide_login",$_POST["hide_login"]);
+        update_option("icp",$_POST["icp"]);
     }
 
 ?>
@@ -33,6 +34,13 @@
                         <input name="hide_login" type="text" value="<?php echo get_option("hide_login"); ?>" class="regular-text">
                         <p class="description"><?php _e('Hide login after opening. Enter <span style="color:#8183ff">true</span> to hide.','poppins'); ?></p>
                         <p><?php _e('You can still login by typing <span style="color:#8183ff">/admin</span> or <span style="color:#8183ff">/wp-login.php</span> after the domain name.','poppins'); ?></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="icp"><?php _e('ICP','poppins'); ?></label></th>
+                    <td>
+                        <input name="icp" type="text" value="<?php echo get_option("icp"); ?>" class="regular-text">
+                        <p class="description"><?php _e('Please enter the ICP filing number. (Chinese users only)','poppins'); ?></p>
                     </td>
                 </tr>
             </tbody>

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Poppins\n"
-"POT-Creation-Date: 2022-08-23 15:24+0800\n"
-"PO-Revision-Date: 2022-08-23 15:24+0800\n"
+"POT-Creation-Date: 2022-08-23 16:34+0800\n"
+"PO-Revision-Date: 2022-08-23 16:34+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -189,7 +189,7 @@ msgid "Remove"
 msgstr ""
 
 #: admin/avatar/admin/wp-user-profile-avatar-settings.php:146
-#: admin/option.php:41
+#: admin/option.php:48
 msgid "Save Changes"
 msgstr "保存设置"
 
@@ -346,6 +346,14 @@ msgstr ""
 "您仍可以在域名后面输入 <span style=\"color:#8183ff\">/admin</span> 或 <span "
 "style=\"color:#8183ff\">/wp-login.php</span> 以登录"
 
+#: admin/option.php:39
+msgid "ICP"
+msgstr "ICP备案"
+
+#: admin/option.php:42
+msgid "Please enter the ICP filing number. (Chinese users only)"
+msgstr "请填写ICP备案号，没有请留空。"
+
 #: author.php:17
 msgid "Published"
 msgstr "发布的"
@@ -371,24 +379,24 @@ msgstr "设置"
 msgid "Logout"
 msgstr "注销"
 
-#: header.php:39 header.php:91
+#: header.php:39 header.php:92
 msgid "Login"
 msgstr "登录"
 
-#: inc/main.php:20 inc/recommend.php:24
+#: inc/main.php:22 inc/recommend.php:26
 msgid "Read more"
 msgstr "阅读更多"
 
-#: inc/main.php:24 inc/main.php:58 inc/recommend.php:28 inc/recommend.php:47
+#: inc/main.php:27 inc/main.php:61 inc/recommend.php:31 inc/recommend.php:50
 #: single.php:44
 msgid "Views"
 msgstr "浏览"
 
-#: inc/main.php:25 inc/main.php:59
+#: inc/main.php:28 inc/main.php:62
 msgid "Sticky"
 msgstr "置顶"
 
-#: inc/main.php:31 inc/main.php:65
+#: inc/main.php:34 inc/main.php:68
 msgid "Have no more!"
 msgstr "没有更多了！"
 
