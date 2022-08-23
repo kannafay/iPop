@@ -82,10 +82,37 @@
     -webkit-line-clamp: 3;
     overflow: hidden;
 }
-.recommend .content .readmore {
-    text-align: right;
+.recommend .content .more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--tr3);
 }
-.recommend .content .readmore a {
+.recommend .content .more .author-avatar {
+    height: 30px;
+    font-size: 16px;
+    color: var(--text-info);
+    display: flex;
+    align-items: center;
+    transition: var(--tr3);
+}
+.recommend .content .more .author-avatar:hover {
+    color: var(--theme);
+}
+.recommend .content .more .author-avatar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.recommend .content .more .author-avatar span {
+    max-width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.recommend .content .more .readmore {
     display: inline-block;
     padding: 6px 20px;
     background-color: var(--theme);

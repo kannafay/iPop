@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Poppins\n"
-"POT-Creation-Date: 2022-08-05 15:03+0800\n"
-"PO-Revision-Date: 2022-08-19 00:37+0800\n"
+"POT-Creation-Date: 2022-08-23 15:24+0800\n"
+"PO-Revision-Date: 2022-08-23 15:24+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -189,7 +189,7 @@ msgid "Remove"
 msgstr ""
 
 #: admin/avatar/admin/wp-user-profile-avatar-settings.php:146
-#: admin/option.php:34
+#: admin/option.php:41
 msgid "Save Changes"
 msgstr "保存设置"
 
@@ -307,25 +307,44 @@ msgstr ""
 msgid "Custom URL"
 msgstr ""
 
-#: admin/option.php:13 functions.php:136 functions.php:137
+#: admin/option.php:12 functions.php:136 functions.php:137
 msgid "Poppins Settings"
 msgstr "Poppins设置"
 
-#: admin/option.php:18
+#: admin/option.php:17
 msgid "Recommend"
 msgstr "首页推荐"
 
-#: admin/option.php:21
+#: admin/option.php:20
 msgid "Display at the top of the home. Fill in the post ID for one."
 msgstr "显示在首页顶部，填写一个文章ID。"
 
-#: admin/option.php:25
+#: admin/option.php:24
 msgid "Cover random picture"
 msgstr "随机封面"
 
-#: admin/option.php:28
+#: admin/option.php:27
 msgid "Replace when have no cover image. Fill in the picture API or URL."
 msgstr "文章没有封面时顶替，填写图片API或URL。"
+
+#: admin/option.php:31
+msgid "Hide login"
+msgstr "隐藏登录"
+
+#: admin/option.php:34
+msgid ""
+"Hide login after opening. Enter <span style=\"color:#8183ff\">true</span> to "
+"hide."
+msgstr ""
+"开启后隐藏登录。输入 <span style=\"color:#8183ff\">true</span> 以隐藏。"
+
+#: admin/option.php:35
+msgid ""
+"You can still login by typing <span style=\"color:#8183ff\">/admin</span> or "
+"<span style=\"color:#8183ff\">/wp-login.php</span> after the domain name."
+msgstr ""
+"您仍可以在域名后面输入 <span style=\"color:#8183ff\">/admin</span> 或 <span "
+"style=\"color:#8183ff\">/wp-login.php</span> 以登录"
 
 #: author.php:17
 msgid "Published"
@@ -340,19 +359,19 @@ msgstr "分类"
 msgid "Page %s"
 msgstr "第 %s 页"
 
-#: header.php:21 header.php:32 search.php:7 searchform.php:7
+#: header.php:21 header.php:29 header.php:38 search.php:7 searchform.php:7
 msgid "Search"
 msgstr "搜索"
 
-#: header.php:22 header.php:81
+#: header.php:22 header.php:88
 msgid "Setting"
 msgstr "设置"
 
-#: header.php:23 header.php:82
+#: header.php:23 header.php:89
 msgid "Logout"
 msgstr "注销"
 
-#: header.php:33 header.php:84
+#: header.php:39 header.php:91
 msgid "Login"
 msgstr "登录"
 

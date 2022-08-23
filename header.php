@@ -24,15 +24,22 @@
                     </div>
                 </div>
             <?php } else { ?>
-                <div class="user visitor">
-                    <img src="<?php echo get_template_directory_uri(); ?>/static/images/visitor.png" alt="">
-                </div>
-                <div class="menu">
-                    <div class="box">
-                        <a class="search-btn"><span class="iconfont icon-sousuo1"></span><?php _e('Search','poppins'); ?><span class="iconfont icon-right"></span></a>
-                        <a class="login" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-login1"></span><?php _e('Login','poppins'); ?><span class="iconfont icon-right"></span></a>
+                <?php if(get_option("hide_login") == 'true') { ?>
+                    <div class="hide-login">
+                        <a class="search-btn"><span class="iconfont icon-sousuo1"></span><?php _e('Search','poppins'); ?></a>
                     </div>
-                </div>
+                    
+                <? } else { ?>
+                    <div class="user visitor">
+                        <img src="<?php echo get_template_directory_uri(); ?>/static/images/visitor.png" alt="">
+                    </div>
+                    <div class="menu">
+                        <div class="box">
+                            <a class="search-btn"><span class="iconfont icon-sousuo1"></span><?php _e('Search','poppins'); ?><span class="iconfont icon-right"></span></a>
+                            <a class="login" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-login1"></span><?php _e('Login','poppins'); ?><span class="iconfont icon-right"></span></a>
+                        </div>
+                    </div>
+                <?php } ?>
             <? } ?>
         </div>
     </div>
@@ -81,7 +88,9 @@
                 <a class="setting" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-setting"></span><p><?php _e('Setting','poppins'); ?></p></a>
                 <a class="logout" href="<?php echo wp_logout_url(); ?>"><span class="iconfont icon-poweroff"></span><p><?php _e('Logout','poppins'); ?></p></a>
             <?php } else { ?>
-                <a class="visitor" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-login1"></span><p><?php _e('Login','poppins'); ?></p></a>
+                <?php if(get_option("hide_login") == 'true') {} else { ?>
+                    <a class="visitor" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-login1"></span><p><?php _e('Login','poppins'); ?></p></a>
+                <?php } ?>
             <?php } ?>
         </div>
     </div>

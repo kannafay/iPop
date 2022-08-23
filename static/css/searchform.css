@@ -39,7 +39,7 @@
     padding: 40px 60px;
 }
 .searchform .search .title {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 700;
     color: var(--text);
     margin-bottom: 20px;
@@ -82,6 +82,7 @@
     color: var(--text-sub);
     font-size: 14px;
     cursor: pointer;
+    transition: var(--tr3);
 }
 .searchform .search .btn:hover {
     color: var(--theme);

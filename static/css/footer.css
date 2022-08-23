@@ -8,6 +8,7 @@
 .footer .footer-box,
 .footer .footer-box a {
     color: var(--text-sub);
+    transition: var(--tr3);
 }
 .footer .footer-box a:hover {
     color: var(--theme);

@@ -68,6 +68,7 @@
     color: var(--text);
     font-size: 14px;
     white-space: nowrap;
+    transition: var(--tr3);
 }
 .navbar .nav ul li a:hover {
     background-color: var(--bgc-sub);
@@ -177,6 +178,28 @@
 }
 .navbar .right .menu .box .logout:hover {
     background-color: var(--danger);
+}
+
+/* 未开启登录导航栏右侧 */
+.navbar .right .hide-login {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbar .right .hide-login .search-btn {
+    cursor: pointer;
+    color: var(--text);
+    font-size: 14px;
+    padding: 5px 12px;
+    border-radius: var(--radius-sub);
+    transition: var(--tr3);
+}
+.navbar .right .hide-login .search-btn:hover {
+    background-color: var(--bgc-sub);
+}
+.navbar .right .hide-login .search-btn span {
+    margin-right: 5px;
+    font-size: 14px;
 }
 
 /* 移动端 */

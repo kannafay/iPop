@@ -179,6 +179,7 @@
         font-size: 14px;
         color: var(--text-sub);
         border-radius: var(--radius-sub);
+        transition: var(--tr3);
     }
     .menu-m .center .menu-box .nav-m a:hover {
         background-color: var(--bgc-sub);
@@ -311,7 +312,7 @@
     }
     .recommend-m .title {
         margin-top: 20px;
-        line-height: 1.2;
+        line-height: 1.4;
         word-break: break-all;
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -410,7 +411,7 @@
     }
     .single .box .content .cate, 
     .single .box .content .cate a {
-        font-size: 14px;
+        font-size: 16px;
     }
     .single .box .content .title {
         font-size: 24px;
@@ -428,7 +429,7 @@
         padding: 2px 16px;
     }
     .recommend-m .title {
-        margin-top: 15px;
+        margin-top: 10px;
     }
     .recommend-m .title a {
         font-size: 18px;
