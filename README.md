@@ -8,13 +8,13 @@
 
 [预览](https://www.poppins.cn)
 
-> [Preview](https://www.poppins.cn)
+> [Preview](https://en.poppins.cn)
 
 ## 温馨提示 Warm Prompt
 
-主题砍掉了许多功能，望悉知。
+主题砍掉了许多功能，望悉知。(目前暂不支持多级导航菜单)
 
-> The theme has cut down many functions. I hope you know.
+> The theme has cut down many functions. I hope you know. (Currently, multi-level navigation menus are not supported)
 
 本项目支持MIT开源协议。
 
