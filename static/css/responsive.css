@@ -179,7 +179,6 @@
         font-size: 14px;
         color: var(--text-sub);
         border-radius: var(--radius-sub);
-        transition: var(--tr3);
     }
     .menu-m .center .menu-box .nav-m a:hover {
         background-color: var(--bgc-sub);
