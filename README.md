@@ -4,15 +4,15 @@
 
 > The theme is inspired by foreign app design works. Thank their designers for their exquisite creation. A simple, elegant and fashionable wordpress blog theme. The theme is internationalized. It supports both Chinese and English, and the corresponding language can be set in the background.
 
+温馨提示：当前主题处于Beta版本，后续将开放更多功能！
+
+> Tips: The current theme is in beta version, more features will be updated in the future!
+
 ## 演示网站 Demo Site
 
 [预览](https://www.poppins.cn)
 
 > [Preview](https://en.poppins.cn)
-
-<span style='color: red'>注意：当前主题处于Beta版本。</span>
-
-> <span style='color: red'>Note: the current theme is in beta version.</span>
 
 ## 温馨提示 Warm Prompt
 
