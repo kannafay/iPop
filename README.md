@@ -10,6 +10,10 @@
 
 > [Preview](https://en.poppins.cn)
 
+<span style='color: red'>注意：当前主题处于Beta版本。</span>
+
+> <span style='color: red'>Note: the current theme is in beta version.</span>
+
 ## 温馨提示 Warm Prompt
 
 主题砍掉了许多功能，望悉知。(目前暂不支持多级导航菜单)
