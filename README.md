@@ -4,10 +4,6 @@
 
 > The theme is inspired by foreign app design works. Thank their designers for their exquisite creation. A simple, elegant and fashionable wordpress blog theme. The theme is internationalized. It supports both Chinese and English, and the corresponding language can be set in the background.
 
-温馨提示：当前主题处于Beta版本，后续将开放更多功能！
-
-> Tips: The current theme is in beta version, more features will be updated in the future!
-
 ## 演示网站 Demo Site
 
 [预览](https://www.poppins.cn)
@@ -16,9 +12,9 @@
 
 ## 温馨提示 Warm Prompt
 
-主题砍掉了许多功能，望悉知。(目前暂不支持多级导航菜单)
+当前主题处于Beta版本，后续将开放更多功能！
 
-> The theme has cut down many functions. I hope you know. (Currently, multi-level navigation menus are not supported)
+> The current theme is in beta version, more features will be updated in the future!
 
 本项目支持MIT开源协议。
 
