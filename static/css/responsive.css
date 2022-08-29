@@ -187,6 +187,7 @@
         display: inline-block;
         margin-left: 4px;
         font-size: 12px;
+        font-weight: 700;
     }
     .menu-m .center .menu-box .nav-m .item-m > .menu-item-has-children > .sub-menu {
         opacity: 0;
