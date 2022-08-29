@@ -92,7 +92,6 @@
         width: 70%;
         height: 100%;
         background-color: var(--bgc);
-        border-radius: 0 var(--radius-large) var(--radius-large) 0;
         box-shadow: var(--box);
         position: fixed;
         top: 0;
@@ -166,11 +165,52 @@
         font-size: 14px;
     }
 
-    .menu-m .center .menu-box .nav-m li {
+    .menu-m .center .menu-box .nav-m .item-m > li {
+        position: relative;
         margin-bottom: 10px;
     }
-    .menu-m .center .menu-box .nav-m li:last-child {
+    .menu-m .center .menu-box .nav-m .item-m > li:last-child {
         margin-bottom: 0;
+    }
+    .menu-m .center .menu-box .nav-m .item-m > .menu-item-has-children {
+        margin-bottom: 10px;
+    }
+    .menu-m .center .menu-box .nav-m .item-m > .menu-item-has-children ul li {
+        margin-left: 10px;
+    }
+    .menu-m .center .menu-box .nav-m .item-m > .menu-item-has-children > a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-m .center .menu-box .nav-m .item-m > .menu-item-has-children > a i {
+        display: inline-block;
+        margin-left: 4px;
+        font-size: 12px;
+    }
+    .menu-m .center .menu-box .nav-m .item-m > .menu-item-has-children > .sub-menu {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        border-left: 2px solid var(--border);
+        overflow: hidden;
+        /* transition: var(--tr3); */
+    }
+    .menu-m .center .menu-box .nav-m .item-m > .menu-item-has-children > .sub-menu-o {
+        margin: 10px 0;
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        /* transition: var(--tr3); */
+    }
+    .menu-m .center .menu-box .nav-m .item-m > .menu-item-has-children > .sub-menu li {
+        margin-bottom: 10px;
+    }
+    .menu-m .center .menu-box .nav-m .item-m > .menu-item-has-children > .sub-menu li:last-child {
+        margin-bottom: 0;
+    }
+    .menu-m .center .menu-box .nav-m .item-m > .menu-item-has-children .menu-item-has-children > * {
+        display: none;
     }
     .menu-m .center .menu-box .nav-m a {
         display: block;
@@ -183,7 +223,7 @@
     .menu-m .center .menu-box .nav-m a:hover {
         background-color: var(--bgc-sub);
     }
-    .menu-m .center .menu-box .nav-m .current-menu-item a {
+    .menu-m .center .menu-box .nav-m .current-menu-item > a {
         color: var(--text-box);
         background-color: var(--theme);
         background: linear-gradient(to right, var(--theme), var(--theme-sub));

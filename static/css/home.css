@@ -103,7 +103,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 8px;
     vertical-align: middle;
 }
 .recommend .content .more .author-avatar span {
@@ -120,6 +120,10 @@
     color: var(--text-box);
     font-size: 14px;
     border-radius: var(--radius-sub);
+    transition: var(--tr3);
+}
+.recommend .content .more .readmore:hover {
+    opacity: .8;
 }
 .recommend .box .info {
     width: 100%;

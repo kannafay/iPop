@@ -8,6 +8,17 @@
             <?php } ?>
             <div class="nav">
                 <?php get_menu(); ?>
+                <script>
+                    const has_menu_item_ul = document.querySelectorAll('#menu #item .menu-item-has-children');
+                    const menu_item_ul = document.querySelectorAll('#menu #item .sub-menu');
+                    const item_children_box = [];
+                    for(let i=0; i<has_menu_item_ul.length; i++) {
+                        item_children_box[i] = document.createElement('div');
+                        has_menu_item_ul[i].insertBefore(item_children_box[i],menu_item_ul[i]);
+                        item_children_box[i].appendChild(menu_item_ul[i]);
+                        item_children_box[i].setAttribute('class','item-children-box');
+                    }
+                </script>
             </div>
         </div>
         <div class="right">
@@ -18,9 +29,9 @@
                 </div>
                 <div class="menu">
                     <div class="box">
-                        <a class="search-btn"><span class="iconfont icon-sousuo1"></span><?php _e('Search','poppins'); ?><span class="iconfont icon-right"></span></a>
-                        <a class="setting" href="<?php echo home_url().'/wp-admin'; ?>" target="_blank"><span class="iconfont icon-setting"></span><?php _e('Setting','poppins'); ?><span class="iconfont icon-right"></span></a>
-                        <a class="logout" href="<?php echo wp_logout_url(); ?>"><span class="iconfont icon-poweroff"></span><?php _e('Logout','poppins'); ?><span class="iconfont icon-right"></span></a>   
+                        <li><a class="search-btn"><span class="iconfont icon-sousuo1"></span><?php _e('Search','poppins'); ?><span class="iconfont icon-right"></span></a></li>
+                        <li><a class="setting" href="<?php echo home_url().'/wp-admin'; ?>" target="_blank"><span class="iconfont icon-setting"></span><?php _e('Setting','poppins'); ?><span class="iconfont icon-right"></span></a></li>
+                        <li><a class="logout" href="<?php echo wp_logout_url(); ?>"><span class="iconfont icon-poweroff"></span><?php _e('Logout','poppins'); ?><span class="iconfont icon-right"></span></a></li>
                     </div>
                 </div>
             <?php } else { ?>
@@ -35,8 +46,8 @@
                     </div>
                     <div class="menu">
                         <div class="box">
-                            <a class="search-btn"><span class="iconfont icon-sousuo1"></span><?php _e('Search','poppins'); ?><span class="iconfont icon-right"></span></a>
-                            <a class="login" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-login1"></span><?php _e('Login','poppins'); ?><span class="iconfont icon-right"></span></a>
+                            <li><a class="search-btn"><span class="iconfont icon-sousuo1"></span><?php _e('Search','poppins'); ?><span class="iconfont icon-right"></span></a></li>
+                            <li><a class="login" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-login1"></span><?php _e('Login','poppins'); ?><span class="iconfont icon-right"></span></a></li>
                         </div>
                     </div>
                 <?php } ?>
@@ -74,6 +85,14 @@
         <div class="menu-box">
             <div class="nav">
                 <?php get_menu_m(); ?>
+                <script>
+                    const menu_item_m = document.querySelectorAll('.menu-m .center .menu-box .nav-m .item-m > .menu-item-has-children > a');
+                    const menu_item_box_m = [];
+                    for(let i=0; i<menu_item_m.length; i++) {
+                        menu_item_box_m[i] = document.createElement('i');
+                        menu_item_m[i].appendChild(menu_item_box_m[i]).setAttribute('class','iconfont icon-arrow-down');
+                    }
+                </script>
             </div>
         </div>
     </div>

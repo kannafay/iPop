@@ -155,6 +155,10 @@
     color: var(--text-box);
     font-size: 12px;
     border-radius: var(--radius-sub);
+    transition: var(--tr3);
+}
+.main .post ul li .box .content .more .readmore:hover {
+    opacity: .8;
 }
 .main .post ul li .box .info {
     width: 100%;
@@ -195,11 +199,14 @@
     font-size: 14px;
     padding: 6px 20px;
     background-color: var(--bgc-sub);
+    border: 1px solid var(--bgc-sub);
     border-radius: var(--radius-large);
     color: var(--text-sub);
     transition: var(--tr3);
 }
 #pagination a:hover {
+    background-color: var(--bgc);
+    border: 1px solid var(--theme);
     color: var(--theme);
 }
 
