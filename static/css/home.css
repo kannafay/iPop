@@ -3,6 +3,8 @@
     height: 400px;
     background-color: var(--bgc-sub);
     border-radius: var(--radius-large);
+    border: 1px solid var(--border);
+    margin-bottom: 50px;
     overflow: hidden;
     display: flex;
 }
@@ -53,7 +55,6 @@
 .recommend .content .cate,
 .recommend .content .cate a {
     font-size: 18px;
-    font-weight: 700;
     color: var(--theme);
     text-transform: uppercase;
 }

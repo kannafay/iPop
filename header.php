@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/static/strawberry/style.css">
+
 <header class="header">
     <div class="navbar">
         <div class="left">

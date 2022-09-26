@@ -6,7 +6,6 @@
         update_option("hide_login",$_POST["hide_login"]);
         update_option("icp",$_POST["icp"]);
     }
-
 ?>
 
 <div class="wrap">
@@ -41,6 +40,12 @@
                     <td>
                         <input name="icp" type="text" value="<?php echo get_option("icp"); ?>" class="regular-text">
                         <p class="description"><?php _e('Please enter the ICP filing number. (Chinese users only)','poppins'); ?></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="icp"><?php _e('Menu icon','poppins'); ?></label></th>
+                    <td>
+                        <p class="description"><a href="https://chuangzaoshi.com/icon/">https://chuangzaoshi.com/icon/</a></p>
                     </td>
                 </tr>
             </tbody>

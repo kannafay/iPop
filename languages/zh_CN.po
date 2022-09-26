@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Poppins\n"
-"POT-Creation-Date: 2022-08-23 16:34+0800\n"
-"PO-Revision-Date: 2022-08-23 16:34+0800\n"
+"POT-Creation-Date: 2022-09-27 01:12+0800\n"
+"PO-Revision-Date: 2022-09-27 01:12+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -189,7 +189,7 @@ msgid "Remove"
 msgstr ""
 
 #: admin/avatar/admin/wp-user-profile-avatar-settings.php:146
-#: admin/option.php:48
+#: admin/option.php:54
 msgid "Save Changes"
 msgstr "保存设置"
 
@@ -354,6 +354,10 @@ msgstr "ICP备案"
 msgid "Please enter the ICP filing number. (Chinese users only)"
 msgstr "请填写ICP备案号，没有请留空。"
 
+#: admin/option.php:46
+msgid "Menu icon"
+msgstr "菜单图标"
+
 #: author.php:17
 msgid "Published"
 msgstr "发布的"
@@ -367,19 +371,19 @@ msgstr "分类"
 msgid "Page %s"
 msgstr "第 %s 页"
 
-#: header.php:21 header.php:29 header.php:38 search.php:7 searchform.php:7
+#: header.php:34 header.php:42 header.php:51 search.php:7 searchform.php:7
 msgid "Search"
 msgstr "搜索"
 
-#: header.php:22 header.php:88
+#: header.php:35 header.php:109
 msgid "Setting"
 msgstr "设置"
 
-#: header.php:23 header.php:89
+#: header.php:36 header.php:110
 msgid "Logout"
 msgstr "注销"
 
-#: header.php:39 header.php:92
+#: header.php:52 header.php:113
 msgid "Login"
 msgstr "登录"
 
@@ -396,7 +400,7 @@ msgstr "浏览"
 msgid "Sticky"
 msgstr "置顶"
 
-#: inc/main.php:34 inc/main.php:68
+#: inc/main.php:34 inc/main.php:68 inc/pagination-ajax.php:34
 msgid "Have no more!"
 msgstr "没有更多了！"
 
@@ -441,7 +445,7 @@ msgid "Cancel"
 msgstr "取消搜索"
 
 #. Theme Name of the plugin/theme
-msgid "Poppins"
+msgid "Poppins Beta"
 msgstr ""
 
 #. Theme URI of the plugin/theme

@@ -28,7 +28,10 @@
                         if (newhref != undefined) {
                             $("#pagination a").attr("href", newhref);
                         } else {
-                            $("#pagination a").remove(); //如果没有下一页了，隐藏
+                            // $("#pagination a").remove(); //如果没有下一页了，隐藏
+                            $("#pagination a").removeAttr("href");
+                            $("#pagination a").unbind("click");
+                            $("#pagination a")[0].innerHTML = "<?php _e('Have no more!','poppins'); ?>";
                         }
                     }
                 });

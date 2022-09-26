@@ -73,8 +73,8 @@
         width: 100vw;
         height: 100vh;
         background-color: #FFFFFF80;
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
         position: fixed;
         top: 0;
         left: 0;
@@ -108,6 +108,7 @@
         top: 0;
         width: 100%;
         padding: 19px 20px;
+        border-bottom: 1px solid var(--border);
     }
     .menu-m .top-box {
         display: flex;
@@ -140,7 +141,7 @@
 
     .menu-m .center {
         margin-top: 72px;
-        padding: 5px 20px;
+        padding: 10px 20px;
         height: calc(100% - 150px);
         overflow: auto;
     }
@@ -152,6 +153,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+        margin-top: 10px;
     }
     .menu-m .center .user-box img {
         width: 40px;
@@ -235,6 +237,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 20px;
+        border-top: 1px solid var(--border);
     }
     .menu-m .bottom .left a {
         display: block;
@@ -323,6 +326,7 @@
         height: 0;
         padding-bottom: 50%;
         border-radius: var(--radius);
+        border: 1px solid var(--border);
         position: relative;
         overflow: hidden;
     }
@@ -362,7 +366,6 @@
     }
     .recommend-m .title a {
         font-size: 24px;
-        font-weight: 700;
         color: var(--text);
     }
     .recommend-m .box {
@@ -467,6 +470,7 @@
         top: 10px;
         right: 10px;
         padding: 2px 16px;
+        border: 1px solid var(--border);
     }
     .recommend-m .title {
         margin-top: 10px;
@@ -510,6 +514,7 @@
         width: 100px;
         height: 100px;
         border-radius: var(--radius-large);
+        border: 1px solid var(--border);
         overflow: hidden;
         margin-right: 20px;
     }
