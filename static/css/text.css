@@ -16,6 +16,7 @@
 .text h4,
 .text h5,
 .text h6 {
+    line-height: 2;
     word-break: break-all;
     word-wrap: break-word;
     white-space: normal;
