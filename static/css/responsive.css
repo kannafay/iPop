@@ -141,7 +141,7 @@
 
     .menu-m .center {
         margin-top: 72px;
-        padding: 10px 20px;
+        padding: 20px;
         height: calc(100% - 150px);
         overflow: auto;
     }
@@ -153,7 +153,6 @@
         display: flex;
         align-items: center;
         margin-bottom: 20px;
-        margin-top: 10px;
     }
     .menu-m .center .user-box img {
         width: 40px;
