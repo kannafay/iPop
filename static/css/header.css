@@ -125,7 +125,7 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
-    padding: 10px;
+    padding: 8px;
     border-radius: var(--radius);
     background-color: var(--bgc);
     box-shadow: var(--box);
@@ -138,7 +138,7 @@
     transform: translateY(0);
 }
 .navbar .left .nav .item .menu-item-has-children .item-children-box ul li {
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
     transform: translateY(20px);
     transition: var(--tr6);
 }
@@ -155,10 +155,10 @@
     color: var(--text);
     border-radius: var(--radius-sub);
     white-space: nowrap;
-    transition: var(--tr3);
+    transition: var(--tr1);
 }
 .navbar .left .nav .item .menu-item-has-children .item-children-box ul li a:hover {
-    background-color: var(--bgc-sub);
+    background-color: var(--theme-sub-text);
 }
 .navbar .left .nav .item .menu-item-has-children .item-children-box ul .current-menu-item a {
     color: var(--text-box);
@@ -216,7 +216,7 @@
 
 .navbar .right .menu .box {
     margin-top: 30px;
-    padding: 10px;
+    padding: 8px;
     border-radius: var(--radius);
     background-color: var(--bgc);
     box-shadow: var(--box);
@@ -224,7 +224,7 @@
 }
 .navbar .right .menu .box li {
     display: block;
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
     visibility: hidden;
     opacity: 0;
     transform: translateY(20px);

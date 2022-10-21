@@ -19,6 +19,7 @@
 :root {
     --theme: #8183FF;
     --theme-sub: #A1A1F7;
+    --theme-sub-text: #EDE9FE;
     --code: #8183FF1A;
     --text: #3D3D3D;
     --text-sub: #5D5D5D;
@@ -35,6 +36,7 @@
     --radius-large: 20px;
     --radius: 10px;
     --radius-sub: 6px;
+    --tr1: all .1s;
     --tr3: all .3s; 
     --tr6: all .6s cubic-bezier(.28,.9,.34,.99);
 }
