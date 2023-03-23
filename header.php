@@ -31,15 +31,15 @@
                 </div>
                 <div class="menu">
                     <div class="box">
-                        <li><a class="search-btn"><span class="iconfont icon-sousuo1"></span><?php _e('Search','poppins'); ?><span class="iconfont icon-right"></span></a></li>
-                        <li><a class="setting" href="<?php echo home_url().'/wp-admin'; ?>" target="_blank"><span class="iconfont icon-setting"></span><?php _e('Setting','poppins'); ?><span class="iconfont icon-right"></span></a></li>
-                        <li><a class="logout" href="<?php echo wp_logout_url(); ?>"><span class="iconfont icon-poweroff"></span><?php _e('Logout','poppins'); ?><span class="iconfont icon-right"></span></a></li>
+                        <li><a class="search-btn"><span class="iconfont icon-sousuo1"></span><?php _e('Search','ipop'); ?><span class="iconfont icon-right"></span></a></li>
+                        <li><a class="setting" href="<?php echo home_url().'/wp-admin'; ?>" target="_blank"><span class="iconfont icon-setting"></span><?php _e('Setting','ipop'); ?><span class="iconfont icon-right"></span></a></li>
+                        <li><a class="logout" href="<?php echo wp_logout_url(); ?>"><span class="iconfont icon-poweroff"></span><?php _e('Logout','ipop'); ?><span class="iconfont icon-right"></span></a></li>
                     </div>
                 </div>
             <?php } else { ?>
                 <?php if(get_option("hide_login") == 'true') { ?>
                     <div class="hide-login">
-                        <a class="search-btn"><span class="iconfont icon-sousuo1"></span><?php _e('Search','poppins'); ?></a>
+                        <a class="search-btn"><span class="iconfont icon-sousuo1"></span><?php _e('Search','ipop'); ?></a>
                     </div>
                     
                 <? } else { ?>
@@ -48,8 +48,8 @@
                     </div>
                     <div class="menu">
                         <div class="box">
-                            <li><a class="search-btn"><span class="iconfont icon-sousuo1"></span><?php _e('Search','poppins'); ?><span class="iconfont icon-right"></span></a></li>
-                            <li><a class="login" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-login1"></span><?php _e('Login','poppins'); ?><span class="iconfont icon-right"></span></a></li>
+                            <li><a class="search-btn"><span class="iconfont icon-sousuo1"></span><?php _e('Search','ipop'); ?><span class="iconfont icon-right"></span></a></li>
+                            <li><a class="login" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-login1"></span><?php _e('Login','ipop'); ?><span class="iconfont icon-right"></span></a></li>
                         </div>
                     </div>
                 <?php } ?>
@@ -106,11 +106,11 @@
         </div>
         <div class="right">
             <?php if(is_user_logged_in()) { ?>
-                <a class="setting" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-setting"></span><p><?php _e('Setting','poppins'); ?></p></a>
-                <a class="logout" href="<?php echo wp_logout_url(); ?>"><span class="iconfont icon-poweroff"></span><p><?php _e('Logout','poppins'); ?></p></a>
+                <a class="setting" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-setting"></span><p><?php _e('Setting','ipop'); ?></p></a>
+                <a class="logout" href="<?php echo wp_logout_url(); ?>"><span class="iconfont icon-poweroff"></span><p><?php _e('Logout','ipop'); ?></p></a>
             <?php } else { ?>
                 <?php if(get_option("hide_login") == 'true') {} else { ?>
-                    <a class="visitor" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-login1"></span><p><?php _e('Login','poppins'); ?></p></a>
+                    <a class="visitor" href="<?php echo home_url().'/wp-admin'; ?>"><span class="iconfont icon-login1"></span><p><?php _e('Login','ipop'); ?></p></a>
                 <?php } ?>
             <?php } ?>
         </div>

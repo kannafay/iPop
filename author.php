@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<div class="poppins-box">
+<div class="ipop-box">
     <section class="home author container">
         <div class="author-box">
             <div class="avatar"><?php echo get_avatar(get_the_author_ID()); ?></div>
@@ -14,7 +14,7 @@
                 <div class="social"></div>
             </div>
         </div>
-        <div class="type"><?php _e('Published','poppins'); ?><span><?php echo page_number(); ?></span></div>
+        <div class="type"><?php _e('Published','ipop'); ?><span><?php echo page_number(); ?></span></div>
         <?php require_once('inc/main.php'); ?>
         <?php require_once('inc/pagination-ajax.php'); ?>
     </section>

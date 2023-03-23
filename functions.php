@@ -10,14 +10,14 @@ function show_wp_title() {
         echo ' &#8211; ' . $site_description;
     }   
     if ( $paged >= 2 || $page >= 2 ) {
-        echo ' &#8211; ' . sprintf( __('Page %s','poppins'), max( $paged, $page ) );
+        echo ' &#8211; ' . sprintf( __('Page %s','ipop'), max( $paged, $page ) );
     }   
 }
 
 function page_number() {
     global $page, $paged;
     if ( $paged >= 2 || $page >= 2 ) {
-        echo ' &#8211; ' . sprintf( __('Page %s','poppins'), max( $paged, $page ) );
+        echo ' &#8211; ' . sprintf( __('Page %s','ipop'), max( $paged, $page ) );
     }  
 }
 
@@ -46,7 +46,7 @@ function get_user_name() {
 
 // 注册菜单
 register_nav_menus( array(        
-    'pc' => '电脑端',
+    'pc' => 'PC端',
     'mobile' => '移动端',
 ) );
 
@@ -58,7 +58,24 @@ function get_menu() {
         'container_class' => 'menu',
         'menu_id' => 'item',
         'menu_class' => 'item',
+        'fallback_cb' => 'nav_fallback'
     ) );
+}
+
+function nav_fallback() {
+    if(is_home()) {
+        echo '<div class="menu">
+            <ul class="item">
+                <li class="current-menu-item"><a href="'.home_url().'">网站首页</a></li>
+            </ul>
+        </div>';
+    } else {
+        echo '<div class="menu">
+            <ul class="item">
+                <li><a href="'.home_url().'">网站首页</a></li>
+            </ul>
+        </div>';
+    }
 }
 
 // 移动端菜单
@@ -69,7 +86,24 @@ function get_menu_m() {
         'container_class' => 'nav-m',
         'menu_id' => 'item-m',
         'menu_class' => 'item-m',
+        'fallback_cb' => 'nav_fallback_m'
     ) );
+}
+
+function nav_fallback_m() {
+    if(is_home()) {
+        echo '<div class="nav-m">
+            <ul class="item-m">
+                <li class="current-menu-item"><a href="'.home_url().'">网站首页</a></li>
+            </ul>
+        </div>';
+    } else {
+        echo '<div class="nav-m">
+            <ul class="item-m">
+                <li><a href="'.home_url().'">网站首页</a></li>
+            </ul>
+        </div>';
+    }
 }
 
 // 移除分类
@@ -131,15 +165,15 @@ function setPostViews($postID) {
 }
 
 // 主题后台设置
-add_action('admin_menu', 'pop_set');
-function pop_set(){
+add_action('admin_menu', 'ipop_set');
+function ipop_set(){
     add_menu_page(
-        __('Poppins Settings','poppins'), 
-        __('Poppins Settings','poppins'), 
+        __('iPop Settings','ipop'), 
+        __('iPop Settings','ipop'), 
         'edit_themes', 
-        'pop_opt', 
-        'pop_opt');}
-function pop_opt(){
+        'ipop_opt', 
+        'ipop_opt');}
+function ipop_opt(){
     require get_template_directory()."/admin/option.php";
 }
 
@@ -181,10 +215,10 @@ add_action('wp_logout','auto_redirect_after_logout');
 
 
 // 主题翻译
-function poppins_setup() {
-    load_theme_textdomain('poppins', get_template_directory() . '/languages');
+function ipop_setup() {
+    load_theme_textdomain('ipop', get_template_directory() . '/languages');
 }
-add_action('init', 'poppins_setup');
+add_action('init', 'ipop_setup');
 
 // 头像翻译
 function avatar_setup() {

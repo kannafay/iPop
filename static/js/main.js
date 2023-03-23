@@ -20,7 +20,10 @@ headroom_m.init();
 
 // 页眉
 const menu_item = document.querySelector('#menu #item');
-menu_item.insertBefore(document.createElement('div'), menu_item.children[0]).setAttribute('class','menu-block');
+if(menu_item) {
+  menu_item.insertBefore(document.createElement('div'), menu_item.children[0]).setAttribute('class','menu-block');
+}
+
 
 $("#menu #item > li > a").on("mouseover", function() {
     var width = $(this).parent().width();

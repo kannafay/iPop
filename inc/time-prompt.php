@@ -8,21 +8,21 @@
     const date_text = document.querySelector('.menu-m .time-tip p')
     if(hour >= 6 && hour <= 7) {
       date_icon.className = 'iconfont icon-a-partlycloudy_01'
-      date_text.innerText = '<?php _e('Good morning!','poppins'); ?>'
+      date_text.innerText = '<?php _e('Good morning!','ipop'); ?>'
     } else if(hour >= 8 && hour <= 11) {
       date_icon.className = 'iconfont icon-sunny'
-      date_text.innerText = '<?php _e('Good morning!','poppins'); ?>'
+      date_text.innerText = '<?php _e('Good morning!','ipop'); ?>'
     } else if(hour == 12) {
       date_icon.className = 'iconfont icon-sunny'
-      date_text.innerText = '<?php _e('Good noon!','poppins'); ?>'
+      date_text.innerText = '<?php _e('Good noon!','ipop'); ?>'
     } else if(hour >= 13 && hour <= 18) {
       date_icon.className = 'iconfont icon-a-partlycloudy_01'
-      date_text.innerText = '<?php _e('Good afternoon!','poppins'); ?>'
+      date_text.innerText = '<?php _e('Good afternoon!','ipop'); ?>'
     } else if(hour >= 19 && hour <= 23){
       date_icon.className = 'iconfont icon-moon'
-      date_text.innerText = '<?php _e('Good evening!','poppins'); ?>'
+      date_text.innerText = '<?php _e('Good evening!','ipop'); ?>'
     } else {
       date_icon.className = 'iconfont icon-a-cloudyatnight'
-      date_text.innerText = '<?php _e('Late at night!','poppins'); ?>'
+      date_text.innerText = '<?php _e('Late at night!','ipop'); ?>'
     }
 </script>

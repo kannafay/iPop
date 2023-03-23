@@ -1,18 +1,18 @@
 @font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins-Light.woff2');
+    font-family: 'Ipop';
+    src: url('../fonts/Ipop-Light.woff2');
     font-style: normal;
     font-weight: 300;
 }
 @font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins-Regular.woff2');
+    font-family: 'Ipop';
+    src: url('../fonts/Ipop-Regular.woff2');
     font-style: normal;
     font-weight: 400;
 }
 @font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins-Bold.woff2');
+    font-family: 'Ipop';
+    src: url('../fonts/Ipop-Bold.woff2');
     font-style: normal;
     font-weight: 700;
 }
@@ -44,13 +44,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins';
+    font-family: 'Ipop';
     -webkit-tap-highlight-color:rgba(0 0 0 / 0) ;
 }
 html, body {
     height: 100%;
 }
-.poppins-box {
+.ipop-box {
     min-height: 100%;
     display: flex;
     flex-direction: column;

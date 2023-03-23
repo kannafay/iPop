@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Poppins\n"
-"POT-Creation-Date: 2022-09-27 01:12+0800\n"
-"PO-Revision-Date: 2022-09-27 01:12+0800\n"
+"Project-Id-Version: Ipop\n"
+"POT-Creation-Date: 2023-03-23 14:48+0800\n"
+"PO-Revision-Date: 2023-03-23 14:49+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -307,9 +307,9 @@ msgstr ""
 msgid "Custom URL"
 msgstr ""
 
-#: admin/option.php:12 functions.php:136 functions.php:137
-msgid "Poppins Settings"
-msgstr "Poppins设置"
+#: admin/option.php:12 functions.php:171 functions.php:172
+msgid "iPop Settings"
+msgstr "iPop主题设置"
 
 #: admin/option.php:17
 msgid "Recommend"
@@ -371,6 +371,14 @@ msgstr "分类"
 msgid "Page %s"
 msgstr "第 %s 页"
 
+#: functions.php:49
+msgid "PC"
+msgstr "PC端"
+
+#: functions.php:50
+msgid "Mobile"
+msgstr "移动端"
+
 #: header.php:34 header.php:42 header.php:51 search.php:7 searchform.php:7
 msgid "Search"
 msgstr "搜索"
@@ -405,7 +413,7 @@ msgid "Have no more!"
 msgstr "没有更多了！"
 
 #: inc/pagination-ajax.php:2 inc/pagination-ajax.php:20
-msgid "Click to see more"
+msgid "Click to view more"
 msgstr "点击查看更多"
 
 #: inc/pagination-ajax.php:10
@@ -445,12 +453,12 @@ msgid "Cancel"
 msgstr "取消搜索"
 
 #. Theme Name of the plugin/theme
-msgid "Poppins Beta"
+msgid "iPop Beta"
 msgstr ""
 
 #. Theme URI of the plugin/theme
 #. Author URI of the plugin/theme
-msgid "https://www.poppins.cn"
+msgid "https://ipop.onll.cn"
 msgstr ""
 
 #. Description of the plugin/theme

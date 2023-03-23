@@ -28,7 +28,7 @@
     }
 </style>
 
-<div class="poppins-box">
+<div class="ipop-box">
     <section class="single container">
         <div class="top container">
             <?php if(has_post_thumbnail()){the_post_thumbnail('large');}else{ ?>
@@ -41,7 +41,7 @@
                 <div class="title"><?php the_title(); ?></div>
                 <div class="info">
                     <div class="date"><span class="iconfont icon-time-circle"></span> <?php echo get_the_date(); ?></div>
-                    <div class="views"><span class="iconfont icon-eye"></span> <?php setPostViews(get_the_ID()) ?><?php echo getPostViews(get_the_ID()) ?> <?php _e('Views','poppins'); ?></div>
+                    <div class="views"><span class="iconfont icon-eye"></span> <?php setPostViews(get_the_ID()) ?><?php echo getPostViews(get_the_ID()) ?> <?php _e('Views','ipop'); ?></div>
                     <!-- <div class="comments"><span class="iconfont icon-message"></span> <?php //if(post_password_required()){echo 'Encrypted';}elseif(comments_open()){comments_popup_link('0 Comment', '1 Comment', '% Comments');}else{echo 'Closed';} ?></div> -->
                 </div>
                 <div class="author">

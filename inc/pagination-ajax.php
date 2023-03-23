@@ -1,5 +1,5 @@
 <div id="pagination">
-    <?php next_posts_link(__('Click to see more','poppins')); ?>
+    <?php next_posts_link(__('Click to view more','ipop')); ?>
 </div>
 
 <script language=javascript>
@@ -7,7 +7,7 @@
         //点击下一页的链接(即那个a标签)
         $('#pagination a').click(function() {
             $this = $(this);
-            $this.addClass('loading').text('<?php _e('Loading...','poppins'); ?>'); //给a标签加载一个loading的class属性，可以用来添加一些加载效果
+            $this.addClass('loading').text('<?php _e('Loading...','ipop'); ?>'); //给a标签加载一个loading的class属性，可以用来添加一些加载效果
             var href = $this.attr("href"); //获取下一页的链接地址
             if (href != undefined) { //如果地址存在
                 $.ajax({ //发起ajax请求
@@ -17,7 +17,7 @@
                         //如果发生错误怎么处理
                     },
                     success: function(data) { //请求成功
-                        $this.removeClass('loading').text('<?php _e('Click to see more','poppins'); ?>'); //移除loading属性
+                        $this.removeClass('loading').text('<?php _e('Click to view more','ipop'); ?>'); //移除loading属性
                         var $res = $(data).find(".main .post ul li"); //从数据中挑出文章数据，请根据实际情况更改
                         $('.main .post ul').append($res.fadeOut(0).fadeIn(300)); //将数据加载加进posts-loop的标签中。
 
@@ -31,7 +31,7 @@
                             // $("#pagination a").remove(); //如果没有下一页了，隐藏
                             $("#pagination a").removeAttr("href");
                             $("#pagination a").unbind("click");
-                            $("#pagination a")[0].innerHTML = "<?php _e('Have no more!','poppins'); ?>";
+                            $("#pagination a")[0].innerHTML = "<?php _e('Have no more!','ipop'); ?>";
                         }
                     }
                 });

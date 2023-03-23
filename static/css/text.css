@@ -195,7 +195,7 @@
 /* 行内代码 */
 .text code {
     font-size: 14px;
-    font-family: 'Consolas', 'Poppins', 'monospace';
+    font-family: 'Consolas', 'Ipop', 'monospace';
     background-color: var(--code);
     color: var(--theme);
     padding: 2px 4px;

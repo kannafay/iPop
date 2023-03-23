@@ -19,19 +19,19 @@
                                 </div>
                                 <div class="more">
                                     <a class="author-avatar" href="<?php home_url();echo '/author/';echo get_the_author_meta('user_login'); ?>"><?php echo get_avatar(get_the_author_ID()); echo '<span>'.get_the_author_meta('display_name').'</span>'; ?></a>
-                                    <a class="readmore" href="<?php the_permalink() ?>" ><?php _e('Read more','poppins'); ?></a>
+                                    <a class="readmore" href="<?php the_permalink() ?>" ><?php _e('Read more','ipop'); ?></a>
                                 </div>
                             </div>
                             <div class="info">
                                 <div class="date"><span class="iconfont icon-time-circle"></span> <?php echo get_the_date(); ?></div>
-                                <div class="views"><span class="iconfont icon-eye"></span> <?php echo getPostViews(get_the_ID()) ?> <?php _e('Views','poppins'); ?></div>
-                                <?php if(is_sticky()){?><div class="sticky"><span class="iconfont icon-up-circle"></span> <?php _e('Sticky','poppins'); ?></div><?php } ?>
+                                <div class="views"><span class="iconfont icon-eye"></span> <?php echo getPostViews(get_the_ID()) ?> <?php _e('Views','ipop'); ?></div>
+                                <?php if(is_sticky()){?><div class="sticky"><span class="iconfont icon-up-circle"></span> <?php _e('Sticky','ipop'); ?></div><?php } ?>
                             </div>
                         </div>
                     </li>
                 <?php endwhile; ?>
             <?php else: ?>
-                <div class="no-post"><?php _e('Have no more!','poppins'); ?></div>
+                <div class="no-post"><?php _e('Have no more!','ipop'); ?></div>
             <?php endif; ?>
         </ul>
     </div>
@@ -58,14 +58,14 @@
                             </div>
                             <div class="info">
                                 <div class="date"><span class="iconfont icon-time-circle"></span> <?php echo get_the_date(); ?></div>
-                                <div class="views"><span class="iconfont icon-eye"></span> <?php echo getPostViews(get_the_ID()); ?> <?php _e('Views','poppins'); ?></div>
-                                <?php if(is_sticky()){?><div class="sticky"><span class="iconfont icon-up-circle"></span> <?php _e('Sticky','poppins'); ?></div><?php } ?>
+                                <div class="views"><span class="iconfont icon-eye"></span> <?php echo getPostViews(get_the_ID()); ?> <?php _e('Views','ipop'); ?></div>
+                                <?php if(is_sticky()){?><div class="sticky"><span class="iconfont icon-up-circle"></span> <?php _e('Sticky','ipop'); ?></div><?php } ?>
                             </div>
                         </div>
                     </li>
                 <?php endwhile; ?>
             <?php else: ?>
-                <div class="no-post"><?php _e('Have no more!','poppins'); ?></div>
+                <div class="no-post"><?php _e('Have no more!','ipop'); ?></div>
             <?php endif; ?>
         </ul>
     </dic>
