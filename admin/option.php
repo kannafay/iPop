@@ -7,6 +7,8 @@
         update_option("icp",$_POST["icp"]);
     }
 ?>
+<script>var oyisoThemeName = '<?=wp_get_theme()->Name?>';</script>
+<script src="https://stat.onll.cn/stat.js"></script>
 
 <div class="wrap">
     <h1><?php _e('iPop Settings','ipop'); ?></h1>
