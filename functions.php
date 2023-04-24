@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Author: 神秘布偶猫
+ * E-mail: me@onll.cn
+ */
+
 // 网站标题
 function show_wp_title() {
     global $page, $paged;
